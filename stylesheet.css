@@ -1301,7 +1301,12 @@ audio {
         background-color: #466baf;
     }
 
-
+img #rayyan {
+	position: absolute;
+	z-index: 10000;
+	max-height: 80px;
+	max-width: 80px; 
+}
 
     /*controlling tablet width*/
     /*@media only screen and (max-width: 720px){
