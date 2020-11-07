@@ -58,7 +58,7 @@ h6 {
 header.masthead {
   position: relative;
   overflow: hidden;
-  padding-top: calc(7rem + 72px);
+  padding-top: calc(4rem + 72px);
   padding-bottom: 7rem;
   background: url(44.jpg) no-repeat center center fixed;
   background-repeat: no-repeat;
