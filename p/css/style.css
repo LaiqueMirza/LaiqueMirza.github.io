@@ -343,5 +343,12 @@ footer.footer-area .social a:hover > i{
 color: var(--primary-color2);
 }
 
-/* End footer Area */ 
+/* End footer Area */
+
+/* additional imp styling */
+
+#no-default-styling{
+    color: black;
+    text-decoration: none;
+}
 
