@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/integration
+        emailjs.init('YOUR_USER_ID');
+    })();
+</script>
+<script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm('contact_service', 'contact_form', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+</script>
+
+
+<form id="contact-form">
+    <input type="hidden" name="contact_number">
+    <label>Name</label>
+    <input type="text" name="user_name">
+    <label>Email</label>
+    <input type="email" name="user_email">
+    <label>Message</label>
+    <textarea name="message"></textarea>
+    <input type="submit" value="Send">
+</form>
+
+
+
+<!--founder of gratitude consulting -->
+<br>
+<div class="arifafounder" >
+
+    <h1> Founder </h1>
+    <h2> Arifa Damani </h2>
+<img src="arifadamani.jpg" alt="Arifa Damani owner of training and technology Consulting" width="350" height=500>
+    <h5>
+       Arifa comes with over 13 years of industry L&D experience in designing trainings and curriculum.
+
+         She started her career as a technology consultant for Accenture back in 2010. Some of her notable clients are Frito-Lay, Salesforce, Google, Intel, and Principal. She has worked with countless systems such as Oracle, PLM, Google Cloud and is determined to help drive her clients through the adoption process.
+
+
+
+       Arifa’s helps her clients focus on long term and strategic L&D initiatives while maintaining current programs. In addition, she has driven process improvements and change management methods to successfully formulate adoption strategies across the Accenture organization. 
+
+    With her private clients who are small businesses, Arifa's focus has been on helping them develop a better web presence, implementing search optimization strategies that can allow clients to rank #1 on Google paired with paid marketing such as facebook and instagram ads.
+
+   </h5>
+</div>
+
+<br>
+
+
+<span class= "reviewsarifa">
+
+<h1>Reviews </h1>
+<h5>What Our Clients Say About Us </h5>
+
+
+</span>
+
+
+<div class="contactform">
+
+<h1> Contact Us </h1>
+<h3> Reach us at arifadamani@gmail.com </h3>
+<h5> Schedule a 15 min consultation call </h5>
+</div>
+<br>
+
+<div class="freechecklist">
+<!--email adddress-->
+
+<p>Get your free Training checklist.</p>
+<input type="email" name= "custEmail"/>
+
+<button onclick="myFunction()">Download the Checklist </button>
+
+<p id="demo"></p>
+
+</div>
+
+    
+</body>
+</html>
