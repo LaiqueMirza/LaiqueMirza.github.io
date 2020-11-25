@@ -153,8 +153,9 @@
     padding: 7rem 0;
     width: 90rem;
 }
-
-
+.first-button{
+    padding: 0.8rem 1rem;
+}
 
 /* End Banner Area */ 
 
