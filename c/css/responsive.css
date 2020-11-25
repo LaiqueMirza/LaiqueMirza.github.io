@@ -30,18 +30,18 @@
     }
     .site-main .subscribe-us-area .subscribe label{
         padding: 2%;
-        margin: 15px 0;
+        margin: 15px 0 !important;
     }
     .site-main .main-form input, textarea{
-        width: 90%;
+        width: 90% !important;
        }
     .site-main .subscribe-us-area .subscribe form button{
     margin-left: 10px !important;
     }
     .first-button{
-        margin-left: 15px;
-        margin-top: 2rem;
-        margin-bottom: .5rem;
+        margin-left: 15px !important;
+        margin-top: 2rem !important;
+        margin-bottom: .5rem !important;
     }
 }
 
