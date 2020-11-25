@@ -304,9 +304,9 @@ margin-bottom: 2.5%;
 }
 
 .site-main .subscribe-us-area .subscribe form input:hover, textarea:hover{
-background: white;
-color: black;
-}
+    background: white;
+    color: black;
+    }
 .site-main .subscribe-us-area .subscribe form button{
     background: transparent;
     border: 1px solid blue;
