@@ -154,7 +154,7 @@
     width: 90rem;
 }
 .first-button{
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 0.85rem;
 }
 
 /* End Banner Area */ 
@@ -303,11 +303,9 @@ font: normal 300 9/13px var(--roboto);
 margin-bottom: 2.5%;
 }
 
-.site-main .subscribe-us-area .subscribe form input::placeholder{
-    color: black;
-}
-.site-main .subscribe-us-area .subscribe form textarea::placeholder {
-    color: black;
+.site-main .subscribe-us-area .subscribe form input:hover, textarea:hover{
+background: white;
+color: black;
 }
 .site-main .subscribe-us-area .subscribe form button{
     background: transparent;

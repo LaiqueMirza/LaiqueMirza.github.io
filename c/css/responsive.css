@@ -5,7 +5,6 @@
 @media only screen and (max-width: 340px){
     .header_area .main-menu .navbar,
     .header_area .main-menu .navbar .navbar-brand,
-    .site-main .subscribe-us-area .subscribe label,
     .site-main .services-area,
     .site-main .subscribe-us-area .subscribe
     {
@@ -29,8 +28,21 @@
     .site-main .subscribe-us-area .subscribe form input, textarea{
         width: 15rem    !important;
     }
-
-
+    .site-main .subscribe-us-area .subscribe label{
+        padding: 2%;
+        margin: 15px 0;
+    }
+    .site-main .main-form input, textarea{
+        width: 90%;
+       }
+    .site-main .subscribe-us-area .subscribe form button{
+    margin-left: 10px !important;
+    }
+    .first-button{
+        margin-left: 15px;
+        margin-top: 2rem;
+        margin-bottom: .5rem;
+    }
 }
 
 
