@@ -28,12 +28,7 @@
     
     <!--  font awesome icons  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-
-    <!--  Owl-carousel css file  -->
-    <link rel="stylesheet" href="./vender/owl-carousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./vender/owl-carousel/css/owl.theme.default.min.css">
-
+    
 
 
     <!-- =========================== main css ========================== -->
@@ -51,7 +46,29 @@
     <header class="header_area">
         <div class="main-menu">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#"><img src="./img/portfolio.png" alt="logo"></a>
+                <a class="navbar-brand" href="#">
+                    <div class="clockbox">
+                        <svg id="clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+                            <g id="face">
+                                <circle class="circle" cx="300" cy="300" r="253.9"/>
+                                <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                                <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                            </g>
+                            <g id="hour">
+                                <path class="hour-arm" d="M300.5 298V142"/>
+                                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                            </g>
+                            <g id="minute">
+                                <path class="minute-arm" d="M300.5 298V67"/>
+                                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                            </g>
+                            <g id="second">
+                                <path class="second-arm" d="M300.5 350V55"/>
+                                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -63,7 +80,7 @@
                             <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About Us</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#services">Services</a>
@@ -72,10 +89,10 @@
                             <a class="nav-link" href="#blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#reviews">Reviews</a>
+                            <a class="nav-link" href="./courses.html">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#free">Free Training</a>
                         </li>
                         
                     </ul>
@@ -95,31 +112,39 @@
     </div>
 
     <!-- =========================== End Topic ========================== -->
+
+
     
+    <!-- =========================== banner area========================== -->
     
-    <!-- =========================== Clock ========================== -->
-    <div class="clockbox">
-        <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
-            <g id="face">
-                <circle class="circle" cx="300" cy="300" r="253.9"/>
-                <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
-                <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
-            </g>
-            <g id="hour">
-                <path class="hour-arm" d="M300.5 298V142"/>
-                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
-            </g>
-            <g id="minute">
-                <path class="minute-arm" d="M300.5 298V67"/>
-                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
-            </g>
-            <g id="second">
-                <path class="second-arm" d="M300.5 350V55"/>
-                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
-            </g>
-        </svg>
-    </div>
-    <!-- =========================== End Clock ========================== -->
+ 
+    <section class="site-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 site-title">
+                    <h3 class="title-text">Hey</h3>
+                    <h1 class="title-text text-uppercase">I am arifa damani</h1>
+                    <h4 class="title-text text-uppercase">training and techology consultant</h4>
+                    <div class="site-buttons">
+                        <div class="d-flex flex-row flex-wrap">
+                            <a href="#free">
+                            <button type="button" class="btn button primary-button mr-4 text-uppercase">free training</button>
+                            </a>
+                            <a href="./courses.html">
+                            <button type="button" class="btn button secondary-button text-uppercase">Courses</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 banner-image">
+                    <img src="./img/banner.jpg" alt="banner-img" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+    <!-- =========================== End Banner area  ========================== -->
+    
 
 
      <!--  ====================== Start Services Area =============================  -->
@@ -136,23 +161,6 @@
             </div>
             <div class="container services-list">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 text-center ">
-                        <div class="services">
-                            <div class="sevices-img text-center py-4">
-                                <img src="./img/1.jpg" class="img-fluid" alt="Services-1">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-uppercase font-roboto">Improve Your Web Presence</h5>
-                                <p class="card-text text-secondary">
-                                    With over 3.5 billion Google searches occurring each day, your customer could 
-                                    be seconds away from locating and patronizing your small business. Business 
-                                    websites allow potential customers to access your business and learn about
-                                     your products and services 24/7.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="services">
                             <div class="sevices-img text-center py-4">
@@ -166,6 +174,23 @@
                                     A modern workforce requires modern training techniques. So, think outside the 
                                     traditional training box and use these data-driven training strategies for 
                                     better employee onboarding.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center ">
+                        <div class="services">
+                            <div class="sevices-img text-center py-4">
+                                <img src="./img/1.jpg" class="img-fluid" alt="Services-1">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">Improve Your Web Presence</h5>
+                                <p class="card-text text-secondary">
+                                    With over 3.5 billion Google searches occurring each day, your customer could 
+                                    be seconds away from locating and patronizing your small business. Business 
+                                    websites allow potential customers to access your business and learn about
+                                     your products and services 24/7.
+
                                 </p>
                             </div>
                         </div>
@@ -260,62 +285,23 @@
         <div class="owl-carousel owl-theme">
             <div class="client row">
                 <div class="col-lg-4 col-md-12 client-img">
-                    <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                    <img src="./img/testimonials/t1.png" alt="img1" class="img-fluid">
                 </div>
                 <div class="col-lg-8 col-md-12 about-client">
-                    <h4 class="text-uppercase">John Martin</h4>
-                    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                        consequuntur ratione, obcaecati corrupti deserunt.</p>
-                </div>
+                    <h4 class="text-uppercase">Haley English</h4>
+                    <p class="para">Arifa took on a lot of work quickly and was expected to understand a complex technical project as the training lead. She learned quickly, was proactive about asking for guidance, and showed her training expertise in pulling together content and a rollout plan for developers. Her work ethic was evident to all in her project interactions." Haley
+                        </p>
+                         </div>
             </div>
             <div class="client row">
                 <div class="col-lg-4 col-md-12 client-img">
-                    <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                    <img src="./img/testimonials/t2.png" alt="img2" class="img-fluid">
                 </div>
                 <div class="col-lg-8 col-md-12 about-client">
-                    <h4 class="text-uppercase">Mac Hill</h4>
-                    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                        consequuntur ratione, obcaecati corrupti deserunt.</p>
-                </div>
-            </div>
-            <div class="client row">
-                <div class="col-lg-4 col-md-12 client-img">
-                    <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
-                </div>
-                <div class="col-lg-8 col-md-12 about-client">
-                    <h4 class="text-uppercase">John Martin</h4>
-                    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                        consequuntur ratione, obcaecati corrupti deserunt.</p>
-                </div>
-            </div>
-            <div class="client row">
-                <div class="col-lg-4 col-md-12 client-img">
-                    <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
-                </div>
-                <div class="col-lg-8 col-md-12 about-client">
-                    <h4 class="text-uppercase">Mac Hill</h4>
-                    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                        consequuntur ratione, obcaecati corrupti deserunt.</p>
-                </div>
-            </div>
-            <div class="client row">
-                <div class="col-lg-4 col-md-12 client-img">
-                    <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
-                </div>
-                <div class="col-lg-8 col-md-12 about-client">
-                    <h4 class="text-uppercase">John Martin</h4>
-                    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                        consequuntur ratione, obcaecati corrupti deserunt.</p>
-                </div>
-            </div>
-            <div class="client row">
-                <div class="col-lg-4 col-md-12 client-img">
-                    <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
-                </div>
-                <div class="col-lg-8 col-md-12 about-client">
-                    <h4 class="text-uppercase">Mac Hill 6</h4>
-                    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                        consequuntur ratione, obcaecati corrupti deserunt.</p>
+                    <h4 class="text-uppercase">Wade pantel</h4>
+                    <p class="para">Arifa is a talented human potential consultant who is deeply skilled in training with good exposure and execution of organizational change management. She is able to quickly assimilate in different environments and has a natural ability to facilitate and bring energy to events. She is well spoken and curious by nature, which allows her to go deeper into different topics. Arifa puts great emphasis on knowing her subject matter in order fulfill her training / change roles. She has a passion for giving back and I'm encouraged to see her contributions to society.
+
+                    </p>
                 </div>
             </div>
         </div>
@@ -329,20 +315,35 @@
 <!-----------------------subscribe area ---------------- -->
 
 
-    <section class="subscribe-us-area" id="contact">
+    <section class="subscribe-us-area" id="free">
         <div class="container subscribe">
             <div class="row">
                 <div class="col-lg-12 text-center subscribe-title">
                     <h4 class="text-uppercase">
-                        Get Update From anywhere
+                        FREE TRAINING
                     </h4>
-                    <p class="para">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, maxime!
-                    </p>
                 </div>
             </div>
             <div class="d-sm-flex justify-content-center">
-                <form action="" class="w-50">
+                <form action="https://formspree.io/f/xwkwnvpj" method="POST" class="main-form">
+                        <label for="" class="text-white">
+                            Name
+                            <input type="text" name="name" class="name">
+                        </label>
+                        <label for="" class="text-white">
+                            E-mail
+                            <input type="email" name="email" class="email" />
+                        </label>
+                        <label for="" class="text-white">
+                            Message
+                            <textarea class="message" name="message" id="" ></textarea>
+                        </label>
+                        <div class="status">
+
+                        </div>
+                        <button type="submit" class="submit btn btn-success">Subscribe</button>  
+                </form>
+                <!-- <form action="" class="w-50">
                     <div class="row d-flex flex-row flex-wrap">
                         <div class="col input-textbox">
                             <input type="text" id="txtemail" class="form-control" placeholder="Email">
@@ -355,14 +356,32 @@
                             </div>
                         </div>
                     </div>
-                </form>
+                </form> -->
             </div>
         </div>
     </section>
 
 <!-----------------------end subscribe  area ---------------- -->
+<!-- <form action="https://formspree.io/f/xwkwnvpj"
+method="POST" class="main-form w-50">
+    <label for="">
+        Name
+        <input type="text" name="name" class="name">
+    </label>
+    <label for="">
+        E-mail
+        <input type="email" name="email" class="email" />
+    </label>
+    <label for="">
+        Message
+        <textarea class="message" name="message" id="" cols="30" rows="10"></textarea>
+    </label>
+    <div class="status">
 
-
+    </div>
+    <button type="submit" class="submit">Send</button>
+</form>
+ -->
 
 </main>
 
@@ -388,6 +407,10 @@
                 </a>
                 <a href="https://www.youtube.com/arifadamani">
                     <i class="fa fa-youtube"></i>
+                </a><a href="https://www.linkedin.com/in/arifa-damani-57827028/">
+                    <i class="fa fa-linkedin"></i>
+                </a><a href="https://www.facebook.com/groups/therapyforentrepreneurs/?notif_id=1606187323246242&notif_t=groups_invite_confirmed_feedback&ref=notif">
+                    <i class="fa fa-facebook"></i>
                 </a>
             </div>
             <div class="copyrights text-center">
@@ -414,15 +437,15 @@
           </button>
         </div>
         <div class="modal-body">
-            <form action="#" method="post">
+            <form action="https://formspree.io/f/xwkwnvpj" method="POST" class="main-form">
                 <div class="form-group">
-                    <input type="email" name="email" class="form-control "
+                    <input type="email" name="email" class="form-control email"
                     placeholder="Email">
                 </div>
                 <div class="form-group">
                     <!-- <input type="submit" name="submit" value="Subscribe" class="btn btn-primary btn-block btn-lg"> -->
-                    <button href="#services" type="submit" class="btn btn-primary btn-block btn-lg">
-                        Subscribe
+                    <button href="#services" type="submit" class="btn btn-primary btn-block btn-lg text-uppercase entered">
+                        I want FREE Training
                     </button>
                 </div>
             </form>
@@ -431,18 +454,24 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     
     $(document).ready(function(){
-        $("body").mouseleave(function(){
+         $("html").mouseleave(function(){
             $("#myPopup").show();
         });
         $(".close").click(function(){
             $("#myPopup").hide();
         })
+        $('.entered').click(function (event){
+        // event.preventDefault()
+
+        var gmail =$('.gmail').val()
+            
+    })
     })
  
-  </script>
+  </script> -->
 
 <!-----------------------end exit intent pop up ---------------- -->
 
