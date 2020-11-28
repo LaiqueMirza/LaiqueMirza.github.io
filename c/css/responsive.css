@@ -87,6 +87,12 @@
     .site-main .about-area .about-image{
         margin-left: 0;
         }
+
+        .site-main .topic h1 {
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 700
+        }
 }
 
 @media only screen and (max-width: 1292px){
