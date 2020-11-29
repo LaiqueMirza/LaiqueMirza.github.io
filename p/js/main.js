@@ -37,3 +37,41 @@ $('.site-main .about-area .owl-carousel').owlCarousel({
 })
 
 })
+
+
+//contact form submission
+
+
+$(document).ready(function(){
+    $('.submit').click(function (event){
+        // event.preventDefault()
+
+        let email =$('.email').val()
+        let name =$('.name').val()
+        let message =$('.message').val()
+        let statusElm =$('.status')
+        statusElm.empty()
+
+        if(email.length > 5 && email.includes('@') && email.includes('.')){
+            statusElm.append('<div style="color: green">Email is valid</div>')
+        } else{
+            event.preventDefault()
+            statusElm.append('<div style="color: red">Email is not valid</div>')
+        }
+
+        if(name.length > 1){
+            statusElm.append('<div style="color: green">Name is valid</div>')
+        } else {
+            event.preventDefault()
+            statusElm.append('<div style="color: red">Name is not valid</div>')
+        }
+        
+        if(message.length > 7){
+            statusElm.append('<div style="color: green">Message is valid</div>')
+        } else {
+            event.preventDefault()
+            statusElm.append('<div style="color: red">Message is not valid</div>')
+        }
+        
+    })
+})

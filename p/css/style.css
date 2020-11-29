@@ -1,9 +1,9 @@
 
 /* css variables */ 
-@import url(./partials/variables.css);
+@import url(./variables.css);
 
 /* import global styling */ 
-@import url(./partials/global.css);
+@import url(./global.css);
 
 
 /* start navigation */ 
@@ -39,6 +39,72 @@
 
 
 /* end navigation */ 
+
+
+/* Clock */ 
+
+
+.clockbox,
+#clock {
+    width: 75px;
+}
+
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #000;
+}
+.hour-marks {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+
+/* End Clock styles */
+
 
 /* Banner Area */ 
 
@@ -277,50 +343,61 @@ padding-left: 3rem;
 
 /* End  about me Area */ 
 
+
 /* subscribe me Area */ 
 
 .site-main .subscribe-us-area .subscribe {
     background: url(../img/subscribe-bg.png) no-repeat;
-    padding: 10rem 0;
+    padding: 5rem 0;
     margin: 3rem auto;
 }
 
-.site-main .subscribe-us-area .subscribe .subscribe-title h4{
-    font: normal 700 30px/30px var(--roboto);
-    color: whitesmoke;
-}
+.site-main .main-form label, input, textarea {
+    display: block;
+    }
+    
+    .site-main .main-form input, textarea{
+     width: 100%;
+    }
 
-.site-main .subscribe-us-area .subscribe .subscribe-title p{
-color: whitesmoke;
-padding: 1rem 4rem;
-}
+    .site-main .subscribe-us-area .subscribe h4{
+        font: normal 500 30px/30px var(--roboto);
+        color: whitesmoke;
+        margin: 1rem;
+    }
+    .site-main .subscribe-us-area .subscribe label{
+        font: normal 500 20px/20px var(--roboto);
+        color: whitesmoke;
+    }
 
-.site-main .subscribe-us-area .subscribe form .input-textbox input{
+.site-main .subscribe-us-area .subscribe form input, textarea{
 width: 400px;
-padding: 1.5rem 1rem;
+padding: 0 1rem;
 border: 1px solid whitesmoke;
 background: transparent;
 color: white;
-font: normal 500 17/20px var(--roboto);
-margin-bottom: 5%;
+font: normal 300 9/13px var(--roboto);
+margin-bottom: 2.5%;
 }
 
-.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder {
+.site-main .subscribe-us-area .subscribe form input:hover, textarea:hover{
+    background: white;
     color: black;
-}
-
-.site-main .subscribe-us-area .subscribe form .btn-submit button{
+    }
+.site-main .subscribe-us-area .subscribe form button{
     background: transparent;
-    border: 1px solid whitesmoke;
-    color: #fff;
-    padding: 0.7rem 2rem;
+    border: 1px solid blue;
+    color: blue;
+    margin-left: 0px !important;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
 }
 
-.site-main .subscribe-us-area .subscribe form .btn-submit button:hover{
+.site-main .subscribe-us-area .subscribe form button:hover{
     background: blue;
+    color: white;
 }
 /* End subscribe me Area */ 
-
 
 /* footer Area */ 
 
@@ -334,7 +411,7 @@ footer.footer-area .social h5{
 }
 
 footer.footer-area .social a > i{
-    font-size: 22px;
+    font-size: 32px;
     padding: 2rem;
     color: var(--primary-color);
 }
