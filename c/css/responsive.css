@@ -2,7 +2,7 @@
 
 
 /* if the viewport is equal to 340px or less than that */ 
-@media only screen and (max-width: 340px){
+@media only screen and (max-width: 390px){
     .header_area .main-menu .navbar,
     .header_area .main-menu .navbar .navbar-brand,
     .site-main .services-area,
@@ -38,10 +38,16 @@
     .site-main .subscribe-us-area .subscribe form button{
     margin-left: 10px !important;
     }
-    .first-button{
-        margin-left: 15px;
-        margin-top: 2rem;
-        margin-bottom: .5rem;
+
+    .site-main .site-banner .site-title button{
+    margin-top: 1rem;
+    margin-bottom: 0;
+    margin-left: 0 ;
+    margin-right: 2px !important;
+    padding: 0.8rem 1.7rem ;
+    }
+    .site-main .site-banner .site-title .first-button{
+       padding: 0.8rem 0.3rem !important;
     }
 }
 

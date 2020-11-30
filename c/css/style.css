@@ -1,11 +1,9 @@
 
-
 /* css variables */ 
 @import url(./variables.css);
 
 /* import global styling */ 
 @import url(./global.css);
-
 
 /* start navigation */ 
 
@@ -124,10 +122,10 @@
 /* End Clock styles */
 
 /* Banner Area */ 
-
+/* 
 .site-main .site-banner {
     background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
-}
+} */
 
 .site-main .site-banner .site-title h3{
     padding-top: 10%;
@@ -175,6 +173,10 @@
 
 .site-main .services-area .services-title h1{
     font-size: 35px;
+}
+.site-main .services-area a{
+    text-decoration: none ;
+    
 }
 
 /* .site-main > .services-area .services .last-item {
