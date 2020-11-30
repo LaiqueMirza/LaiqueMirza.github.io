@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/laiquemirza.github.io/rave/static/css/main.4d59d4d2.chunk.css",
+    "main.js": "/laiquemirza.github.io/rave/static/js/main.65c0b7ae.chunk.js",
+    "main.js.map": "/laiquemirza.github.io/rave/static/js/main.65c0b7ae.chunk.js.map",
+    "runtime-main.js": "/laiquemirza.github.io/rave/static/js/runtime-main.095de52e.js",
+    "runtime-main.js.map": "/laiquemirza.github.io/rave/static/js/runtime-main.095de52e.js.map",
+    "static/js/2.ff10b991.chunk.js": "/laiquemirza.github.io/rave/static/js/2.ff10b991.chunk.js",
+    "static/js/2.ff10b991.chunk.js.map": "/laiquemirza.github.io/rave/static/js/2.ff10b991.chunk.js.map",
+    "index.html": "/laiquemirza.github.io/rave/index.html",
+    "precache-manifest.734234e7da1f2f2802be2f3137299cc5.js": "/laiquemirza.github.io/rave/precache-manifest.734234e7da1f2f2802be2f3137299cc5.js",
+    "service-worker.js": "/laiquemirza.github.io/rave/service-worker.js",
+    "static/css/main.4d59d4d2.chunk.css.map": "/laiquemirza.github.io/rave/static/css/main.4d59d4d2.chunk.css.map",
+    "static/js/2.ff10b991.chunk.js.LICENSE.txt": "/laiquemirza.github.io/rave/static/js/2.ff10b991.chunk.js.LICENSE.txt",
+    "static/media/SearchBar.css": "/laiquemirza.github.io/rave/static/media/background_search_mobile.5d0905e6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.095de52e.js",
+    "static/js/2.ff10b991.chunk.js",
+    "static/css/main.4d59d4d2.chunk.css",
+    "static/js/main.65c0b7ae.chunk.js"
+  ]
+}
