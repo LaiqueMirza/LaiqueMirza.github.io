@@ -423,9 +423,11 @@
   </div>
   
   <script type="text/javascript">
-    $(document).ready(function(){
+
+        $(document).ready(function(){
          $("html").mouseleave(function(){
             $("#myPopup").show();
+            $(this).off('mouseleave')
         });
         $(".close").click(function(){
             $("#myPopup").hide();
@@ -436,8 +438,8 @@
         var gmail =$('.gmail').val()
     })
     })
- 
-  </script>
+
+    </script>
 
 <!-----------------------end exit intent pop up ---------------- -->
 
