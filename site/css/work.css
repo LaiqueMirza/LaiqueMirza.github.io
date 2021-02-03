@@ -117,7 +117,7 @@ body {
     z-index: 2;
 }
 header.sticky {
-    margin-top: -10px;
+    margin-top: -110px;
 }
   
   .logo {
@@ -262,7 +262,7 @@ header.sticky {
     }
   }
   
-  @media only screen and (max-width: 1250px) {
+  @media only screen and (max-width: 1390px) {
     header.sticky {
         margin-top: -10px;
     }
