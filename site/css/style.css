@@ -818,7 +818,7 @@ color: #486683;
 
 /*  latest news----------------------------------------------------------------------- */
 .latest-news {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   margin-top: 50px;
 }
 .div-head-latest-news {
@@ -907,24 +907,7 @@ margin-bottom: 30px;
 /* end last info ----------------------------------------------------------------------- */
 
 /* footer ----------------------------------------------------------------------- */
-/* 
-.div-footer{
-  display: flex;
-  justify-content: space-between;
-}
-.div2-footer{
-display: block;
-}
-.p1-footer {
-  display: inline-block;
-  padding-right: 30px;
-  padding-left: 10px;
-}
-.p2-footer {
-  display: inline-block;
-  padding-right: 30px;
-  padding-left: 10px;
-} */
+
 
 
 /* end footer----------------------------------------------------------------------- */

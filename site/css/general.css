@@ -1,0 +1,201 @@
+
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;   
+}
+
+
+body {
+    font-family: 'Nunito Sans', sans-serif;;
+}
+
+
+
+/* start top address section */ 
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    border-bottom: 1px solid rgb(163, 161, 161);
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+    margin-top: -200px;
+}
+  
+  .logo {
+    cursor: pointer;
+  }
+  .logo-of-nav{
+      width: 200px;
+      height: 95px;
+      margin-left: -30px;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  .nav__links a {
+      color: #000;
+  }
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    font-weight: 600;
+    color: #002345;
+    margin-top: 20px;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #0088a9;
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  .get-appointment {
+    color: #fff;
+    background-color: #0d9c68;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.8s linear;
+    padding-right: 15px;
+
+}
+
+.calender-icon {
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    list-style: none;
+}
+.get-appointment:hover {
+    background-color: #ff8c00;
+    text-decoration: none;
+
+}
+  
+  /* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #0088a9;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+  }
+  @media only screen and (max-width: 1440px) {
+    .nav__links li {
+        padding: 0 10px;
+    }
+}
+
+
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+    @media only screen and (max-width: 1200px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .get-appointment {
+        display: none;
+    }
+    .menu {
+      display: initial;
+    }
+    
+  }
+  
+
+
+
+  /* end top navigation ----------------------------------------------------------------------- */
+
+.main-area {
+    margin-top: 200px;
+}
