@@ -1,0 +1,144 @@
+@media only screen and (max-width) {
+
+}
+
+
+
+/* end top address section */ 
+
+
+/* start navigation */ 
+/* 
+.header_area .main-menu .navbar .navbar-brand{
+margin-top: -20px;
+}
+
+.header_area .main-menu .navbar{
+    padding: 0 15px  ;
+}
+
+.navbar-toggler {
+    margin-top: -25px;
+    border: none;
+}
+
+
+.header_area .main-menu .nav-item .nav-link{
+    padding: 0 15px;
+    color: #000;
+    font-weight: 600;
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    -webkit-background-clip: text;
+    background-clip: text;
+} */
+
+/* working on nav */
+/* 
+.top-menu-logo {
+    width: 250px;
+}
+
+
+.menu2-list {
+    transform: scale(1);
+    transition: transform 1s;
+    margin-top: -20px;
+    font-size: 18px;
+    padding: 0 20px;
+
+}
+.menu2-list:hover {
+    color: #0d9c68;
+    transform: scale(1.1);
+
+}
+
+.the-menu2-nav {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgb(163, 161, 161);
+    margin-top: -100px;
+}
+
+
+.get-appointment{
+    margin-top: -20px;
+    margin-right: 20px;
+    padding: 30px;
+
+}
+.calender-icon {
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.get-app-span {
+padding-right: 7px;
+}
+
+.get-app-button {
+    color: #fff;
+    background-color: #0d9c68;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.8s linear;
+}
+
+.get-app-button:hover {
+    background-color: #ff8c00;
+}
+
+
+@media only screen and (max-width: 1500px) {
+.menu2-list {
+    padding: 0;
+    font-size: 15px;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+    .menu2-list {
+    margin-top: 20px;
+    }
+    .navbar-toggler {
+    
+    }  
+    .navbar-nav {
+        margin-top: 40px;
+    }
+
+.menu2-list:hover {
+transform: scale(1);
+}
+
+.get-app-button {
+}
+
+.get-appointment{
+margin-right: 5px;
+} 
+} */
+/* end navigation 
+@media only screen and (max-width: 620px) {
+
+    .top-menu-logo {
+        margin-left: 50px;
+    }
+.the-menu2-nav {
+justify-content: space-between;
+}
+
+
+} */
+

@@ -1,0 +1,937 @@
+
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;   
+}
+
+
+body {
+    font-family: 'Nunito Sans', sans-serif;;
+}
+
+
+
+/* start top address section */ 
+
+
+
+#theTopMenu {
+    display: block;
+    border-bottom: 1px solid rgb(163, 161, 161);
+    padding: 17px;
+}
+
+.addressAndNumber{
+    display: inline-block;
+    padding: 10px 0px;
+    margin-left: 0px;
+}
+
+.num-top {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 12px;
+}
+.p-top {
+    display: inline-block;
+    padding: 5px 5px;
+}   
+
+.phone-icon {
+    color: #0d9c68;
+    
+}
+
+.map-icon {
+    color: #ff8c00;
+}
+
+.clock-icon {
+    color: #0d9c68;
+    
+    padding: 5px;
+}
+.p2-top {
+    display: inline-block;
+    padding: 5px;
+
+}   
+
+.top-nav-list li{
+    display: inline-block;
+    color: black;
+    padding: 0px;
+}
+
+.ul-of-top-nav {
+    color: black;
+    margin-right: 5px;
+}
+
+.list-of-top-nav {
+    color: #000;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.hours-on-top {
+    display: inline-block;
+    padding: 0 12px;
+}
+.p-hours-on-top {
+    display: inline-block;
+}
+.flexIsUsed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+ 
+@media (max-width: 1390px){
+#theTopMenu {
+    display: none;
+}
+} 
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    border-bottom: 1px solid rgb(163, 161, 161);
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
+header.sticky {
+    margin-top: -10px;
+}
+  
+  .logo {
+    cursor: pointer;
+  }
+  .logo-of-nav{
+      width: 200px;
+      height: 95px;
+      margin-left: -30px;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  .nav__links a {
+      color: #000;
+  }
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    font-weight: 600;
+    color: #002345;
+    margin-top: 20px;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #0088a9;
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  .get-appointment {
+    color: #fff;
+    background-color: #0d9c68;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.8s linear;
+    padding-right: 15px;
+
+}
+
+.calender-icon {
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    list-style: none;
+}
+.get-appointment:hover {
+    background-color: #ff8c00;
+    text-decoration: none;
+
+}
+  
+  /* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #0088a9;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+  }
+  @media only screen and (max-width: 1440px) {
+    .nav__links li {
+        padding: 0 10px;
+    }
+}
+
+
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 1250px) {
+    header.sticky {
+        margin-top: -10px;
+    }
+}
+    @media only screen and (max-width: 1200px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .get-appointment {
+        display: none;
+    }
+    .menu {
+      display: initial;
+    }
+    
+  }
+  
+
+
+
+  /* end top navigation ----------------------------------------------------------------------- */
+
+
+
+  /* start video and se habla espanol ----------------------------------------------------------------------- */
+
+  .video-tag {
+      width: 100%;
+      max-height: 1000px;
+      margin-top: 130px;
+  }
+
+  .div-word-se-habla {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      margin-top: 50px;
+    }
+  .word-se-habla {
+      display: inline-block;
+        margin: 0 auto;
+        font-weight: 600;
+    }
+  .quotation-img {
+    margin-top: -50px;
+    display: inline-block;
+      width: 25px;
+  }
+  @media only screen and (max-width: 700px) {
+    .word-se-habla {
+    font-size: 22px;
+    }
+  .quotation-img {
+    width: 15px;
+    margin-top: -30px;
+}
+
+}
+  /* end video and se habla espanol ----------------------------------------------------------------------- */
+  
+  
+  
+  
+  
+  /* start dental treatment section ----------------------------------------------------------------------- */
+
+.dental-treatments {
+    width: 100%;
+    margin-top: 50px;
+    color: #002345;
+
+}
+.div-heading-dental-treatments {
+    width: 100%;
+  
+    text-align: center;
+}
+.heading-dental-treatments {
+font-size: 42px;
+font-weight: 700;
+margin-bottom: 5px;
+padding: 20px 40px;
+}
+section.dental-treatments img {
+    width: 130px;
+}
+.card-title {
+    font-weight: 600;
+}
+.element-of-dental-treatments {
+    border: none;
+}
+@media only screen and (max-width: 800px) {
+    .heading-dental-treatments {
+    font-size: 36px;
+    }
+}
+
+
+
+
+
+  /* end dental treatment section ----------------------------------------------------------------------- */
+ 
+ 
+ 
+ 
+  /* start why Choose us----------------------------------------------------------------------- */
+
+    .why-choose-us {
+        width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #002345;
+
+    }
+
+    .head-why-choose-us {
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    .para-why-choose-us {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 17px;
+        color: #486683;
+        line-height: 25px;
+    }
+    .card-para-why-choose-us{
+        font-size: 15px;
+        color: #486683;
+    }
+
+    .element-of-why-choose-us {
+        border: none;
+    }
+
+    .doctor-icon {
+        color: #588CEC;
+        font-size: 56px;
+        margin-top: 40px;
+    }
+    .stopwatch-icon{
+        color: #89E873;
+        font-size: 56px;
+        margin-top: 40px;
+        
+    }
+    .customers-icon{
+        color: #FEB25E;
+        font-size: 56px;
+        margin-top: 40px;
+
+    }
+
+    .div-image-of-why-choose-us {
+        margin: 75px 0 0 25px;        
+    }
+
+@media only screen and (max-width: 800px) {
+  .head-why-choose-us {
+    font-size: 36px;
+  }
+}
+  /* end why Choose  us ----------------------------------------------------------------------- */
+
+
+
+
+  /* start dental ----------------------------------------------------------------------- */
+
+
+  .welcome-dental{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #002345;
+  }
+
+  .head1-dental{
+      font-size: 14px;
+      color: #486683;
+      font-weight: 800;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+  }
+
+  .head2-dental {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.div-para-dental{
+color: #486683;
+}
+
+.element-dental-1{
+    display: inline-block;
+}
+.correct-icon {
+    color: #28b1e7;
+    padding-right: 7px;
+}
+
+.image-of-dental{
+    max-width: 400px;
+}
+
+@media only screen and (max-width: 800px) {
+  .head2-dental {
+    font-size: 36px;
+  }
+}
+  /* end dental ----------------------------------------------------------------------- */
+
+
+
+  /* book appointment ----------------------------------------------------------------------- */
+
+.book-appointment{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: #002345;
+    
+}
+.col1-book-appointment{
+    padding-right: 50px;
+}
+.head-book-appointment{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.para-book-appointment {
+    font-size: 17px;
+    color: #486683;
+}
+
+.div-input-of-book-appointment{
+    margin: 10px 10px 10px 0;
+    padding: 15px;
+
+}
+.input-of-book-appointment{
+    background-color: #e0edfa;
+}
+
+.call-info {
+    margin-top: 80px;
+}
+.head1-call-info{
+    font-size: 15px;
+    color: #486683;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.head2-call-info{
+    font-size: 40px;
+    color: #002345;
+    font-weight: 700;
+    margin-bottom: 19px;
+
+}
+.para-call-info {
+    font-size: 15px;
+    color: #486683;
+    margin-bottom: 25px;
+
+}
+.marker-icon {
+    padding: 0 10px;
+    color: #588CEC;
+}
+.view-on-google{
+    color: #000;
+}
+
+.div-button-of-book-appointment{
+  margin-top: 15px;
+
+}
+
+
+
+.selectnone {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.selectnone {
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: 2px solid #002345;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;
+}
+
+.selectnone:hover {
+  width: 170px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+}
+
+.span-of-book-appointment, .svg-of-book-appointment {
+  position: absolute;
+  color: #002345;
+  fill: transparent;
+  transition: .4s;
+}
+
+.selectnone:hover span {
+  transition: .4s;
+  font-size: 16px;
+}
+
+.selectnone:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid transparent;
+  width: 50px;
+  border-left: 2px solid #932e3e;
+  border-bottom: 2px solid #932e3e;
+  animation: spin 2s 500ms forwards;
+}
+
+.selectnone:focus .span-of-book-appointment {
+  color: transparent;
+}
+
+.selectnone:focus .svg-of-book-appointment {
+  animation: check 500ms 2300ms forwards;
+}
+
+@keyframes spin {
+  80% {
+    border: 2px solid transparent;
+    border-left: 2px solid #932e3e;
+  }
+  100% {
+    transform: rotate(1080deg);
+    border: 2px solid #932e3e;
+  }
+}
+
+@keyframes check {
+  to {
+    fill: #932e3e;
+  }
+}
+
+@keyframes circle {
+  to {
+    border: 2px solid #932e3e;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+.head-book-appointment{
+    font-size: 36px;
+  }
+}
+  /* end book appointment ----------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+  /* insurance ----------------------------------------------------------------------- */
+
+  .insurance{
+    color: #fff;
+    background-color: #36beff;
+    padding: 23px 36.5px 27px;
+  }
+  .div-head-of-insurance {
+
+    margin-bottom: 70px;
+  }
+
+  .head-of-insurance{
+    font-weight: 800;
+    font-size: 26px;
+    
+  }
+  .insurance-icon{
+    padding-right: 10px;
+    font-size: 30px;
+  }
+  .image-of-insurance{
+    padding: 0 30px;
+  }
+.div-images-of-insurance {
+  display: flex;
+  justify-content: center;
+}
+.h3-images-of-insurance {
+  padding: 0 30px;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .h3-images-of-insurance {
+    font-size: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+  .h3-images-of-insurance {
+    font-size: 25px;
+  }
+}
+
+
+@media only screen and (max-width: 1600px) {
+
+  .h3-images-of-insurance {
+    font-size: 35px;
+  }
+}
+
+/* end insurance ----------------------------------------------------------------------- */
+
+
+
+
+/* reviews ----------------------------------------------------------------------- */
+.reviews{
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.head-of-review{
+  font-size: 14px;
+  color: #7a8a9e;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.image-of-review{
+  width: 10px;
+}
+.div-of-review{
+  color: #002345;
+ margin: auto;
+ padding: 20px 20%;
+ z-index: 1;
+}
+.para-of-review{
+  font-size: 24px;
+}
+
+.star-of-review{
+  font-size: 12px;
+}
+
+.writer-of-review{
+  font-weight: 800;
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* end reviews ----------------------------------------------------------------------- */
+
+
+
+
+
+/* finance ----------------------------------------------------------------------- */
+.finance {
+  margin-bottom: 50px;
+}
+.div-head-finance {
+  margin-bottom: 30px;
+}
+.head-finance{
+  font-size: 42px;
+  color: #002345;
+  font-weight: 700;
+}
+.image-finance {
+  padding: 0 30px;
+  width: 350px;
+}
+
+@media only screen and (max-width: 800px) {
+  .image-finance {
+    width: 200px;
+  }
+  .head-finance{
+    font-size: 36px;
+  }
+}
+/* end finance ----------------------------------------------------------------------- */
+
+
+/* online ----------------------------------------------------------------------- */
+.online {
+  padding: 50px 0px;
+  background-color: #d85482;
+  color: #fff;
+}
+.div-head-online {
+  margin-bottom: 50px;
+}
+.head-online{
+  font-size: 42px;
+  font-weight: 700;
+}
+.a-of-online{
+  background-color: #fff;
+  padding: 20px;
+  color: #d85482;
+}
+.a-of-online:hover{
+  color: #fff;
+  background-color: #486683;
+
+}
+@media only screen and (max-width: 800px) {
+  
+  .head-online{
+    font-size: 36px;
+  }
+}
+/* end online  ----------------------------------------------------------------------- */
+
+
+
+/*  latest news----------------------------------------------------------------------- */
+.latest-news {
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.div-head-latest-news {
+  margin-bottom: 30px;
+}
+.head-latest-news{
+  font-size: 42px;
+  color: #002345;
+  font-weight: 700;
+}
+.para-latest-news {
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  
+  .head-latest-news{
+    font-size: 36px;
+  }
+}
+/* end latest news ----------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* last-info ----------------------------------------------------------------------- */
+.last-info{
+margin-bottom: 30px;
+}
+.div-last-info{
+  border-bottom: 3px groove #f2f9ff;
+}
+.image-of-last-info{
+  width: 200px;
+  margin-left: -25px;
+  margin-top: -50px;
+}
+.p1-of-last-info{
+  font-size: 15px;
+  color: #3a3a3a;
+  margin-right: 20px;
+}
+.p2-of-last-info{
+  font-size: 15px;
+  color: #92278f;
+
+}
+.p3-of-last-info{
+  font-size: 15px;
+  color: #f7941d;
+
+}
+
+.head-of-list-info{
+  font-size: 18px;
+  color: #00aeef;
+  margin-bottom: 26px;
+  font-weight: 700;
+}
+.the-list-of-list-info{
+  padding: 7px 0;
+
+}
+.list-of-list-info{
+  color: #000;
+  font-size: 15px;
+}
+.ul-of-list-info{
+  list-style: none;
+  padding: 20px 0;
+}
+.image1-of-list-info{
+  width: 50px;
+
+}
+.image2-of-list-info{
+  width: 75px;
+
+}
+/* end last info ----------------------------------------------------------------------- */
+
+/* footer ----------------------------------------------------------------------- */
+/* 
+.div-footer{
+  display: flex;
+  justify-content: space-between;
+}
+.div2-footer{
+display: block;
+}
+.p1-footer {
+  display: inline-block;
+  padding-right: 30px;
+  padding-left: 10px;
+}
+.p2-footer {
+  display: inline-block;
+  padding-right: 30px;
+  padding-left: 10px;
+} */
+
+
+/* end footer----------------------------------------------------------------------- */
+
+
+
+
+
+ 
+
