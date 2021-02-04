@@ -30,13 +30,13 @@ $('.insurance .owl-carousel').owlCarousel({
       0: {
           items: 2
       },
-      560: {
+      760: {
           items: 4
       },
       1000: {
         items: 5
       },
-      1500: {
+      1600: {
         items:7
       }
   }
@@ -85,7 +85,7 @@ $(document).ready(function(){
       }
       
       if(phoneNumber.length > 7){
-        statusElm.append('<div style="color: green">Phone Number is valid</div><br>')
+        statusElm.append('<div style="color: green">Phone Number is valid</div><h5>Thanks for subscribing</h5> <br>')
     } else {
         event.preventDefault()
         statusElm.append('<div style="color: red">Phone Number is not valid </div><div style="color: red">form is not submitted</div><br>')

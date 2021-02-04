@@ -25,35 +25,40 @@ body {
 
 .addressAndNumber{
     display: inline-block;
-    padding: 10px 0px;
+    padding: 0px 0px;
     margin-left: 0px;
 }
 
 .num-top {
     display: inline-block;
     cursor: pointer;
-    padding: 0 12px;
+    padding: 0 6px;
 }
 .p-top {
     display: inline-block;
-    padding: 5px 5px;
+    padding: 5px 0px;
+    font-size: 14px;
 }   
 
 .phone-icon {
+    font-size: 14px;
     color: #0d9c68;
     
 }
 
 .map-icon {
+    font-size: 14px;
     color: #ff8c00;
 }
 
 .clock-icon {
+    font-size: 14px;
     color: #0d9c68;
     
     padding: 5px;
 }
 .p2-top {
+    font-size: 14px;
     display: inline-block;
     padding: 5px;
 
@@ -67,20 +72,20 @@ body {
 
 .ul-of-top-nav {
     color: black;
-    margin-right: 5px;
 }
 
 .list-of-top-nav {
     color: #000;
     padding: 4px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .hours-on-top {
     display: inline-block;
-    padding: 0 12px;
+    padding: 0 6px;
 }
 .p-hours-on-top {
+    font-size: 14px;
     display: inline-block;
 }
 .flexIsUsed {
@@ -90,9 +95,9 @@ body {
 }
     
  
-@media (max-width: 1390px){
+@media (max-width: 1200px){
 #theTopMenu {
-    display: none;
+  display: none;
 }
 } 
 
@@ -117,7 +122,7 @@ body {
     z-index: 2;
 }
 header.sticky {
-    margin-top: -110px;
+    margin-top: -82px;
 }
   
   .logo {
@@ -128,6 +133,11 @@ header.sticky {
       height: 95px;
       margin-left: -30px;
   }
+  
+  .monkey-logo-of-nav{
+    width: 75px;
+    margin-top: -15px;
+}
   
   .nav__links a,
   .cta,
@@ -250,7 +260,15 @@ header.sticky {
     }
 }
 
+@media screen and (max-width: 380px) {
+.monkey-logo-of-nav{
+  width: 45px;
+}
 
+.logo-of-nav{
+  width: 150px;
+}
+}
   @media screen and (max-height: 450px) {
     .overlay a {
       font-size: 20px;
@@ -262,9 +280,9 @@ header.sticky {
     }
   }
   
-  @media only screen and (max-width: 1390px) {
+  @media only screen and (max-width: 1200px) {
     header.sticky {
-        margin-top: -10px;
+        margin-top: 0px;
     }
 }
     @media only screen and (max-width: 1200px) {
@@ -378,6 +396,7 @@ section.dental-treatments img {
     margin-top: 50px;
     margin-bottom: 50px;
     color: #002345;
+    background-color: #f4fbff;
 
     }
 
@@ -654,8 +673,6 @@ color: #486683;
   /* insurance ----------------------------------------------------------------------- */
 
   .insurance{
-    color: #fff;
-    background-color: #36beff;
     padding: 23px 36.5px 27px;
   }
   .div-head-of-insurance {
@@ -663,6 +680,27 @@ color: #486683;
     margin-bottom: 70px;
   }
 
+  .mcna{
+    margin-top: 20px;
+  }
+  .medicaid{
+    margin-top: 7px;
+  }
+  .metlife{
+margin-top: 30px;
+  }
+  .principal{
+    margin-top: 15px;
+  }
+  .unitedhealthcare{
+    margin-top: 40px;
+  }
+  .cigna{
+    margin-top: 8px;
+  }
+  .tmhp{
+    margin-top: -30px;
+  }
   .head-of-insurance{
     font-weight: 800;
     font-size: 26px;
@@ -748,6 +786,16 @@ color: #486683;
   font-size: 18px;
   font-style: italic;
 }
+@media only screen and (max-width: 800px) {
+  .div-of-review{
+    padding: 20px 5%;
+  }
+  
+.para-of-review{
+  font-size: 16px;
+}
+
+}
 
 /* end reviews ----------------------------------------------------------------------- */
 
@@ -786,7 +834,7 @@ color: #486683;
 /* online ----------------------------------------------------------------------- */
 .online {
   padding: 50px 0px;
-  background-color: #d85482;
+  background-color: #68b945;
   color: #fff;
 }
 .div-head-online {
@@ -799,7 +847,7 @@ color: #486683;
 .a-of-online{
   background-color: #fff;
   padding: 20px;
-  color: #d85482;
+  color: #f6921e;
 }
 .a-of-online:hover{
   color: #fff;
@@ -820,6 +868,7 @@ color: #486683;
 .latest-news {
   margin-bottom: 150px;
   margin-top: 50px;
+  background-color: #f6f5f9;
 }
 .div-head-latest-news {
   margin-bottom: 30px;
@@ -853,6 +902,7 @@ color: #486683;
 /* last-info ----------------------------------------------------------------------- */
 .last-info{
 margin-bottom: 30px;
+background-color: #f4fbff;
 }
 .div-last-info{
   border-bottom: 3px groove #f2f9ff;
