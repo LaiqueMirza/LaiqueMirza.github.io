@@ -10,7 +10,53 @@ html, body {
 body {
     font-family: 'Nunito Sans', sans-serif;;
 }
+h2, h3, h4 {
+  font-family: 'Heebo', sans-serif;
 
+}
+
+
+
+/* Animation */
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
 
 
 /* start top address section */ 
@@ -133,7 +179,11 @@ header.sticky {
       height: 95px;
       margin-left: -30px;
   }
-  
+  .menu2-list{
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 17px;    
+  }
   .monkey-logo-of-nav{
     width: 75px;
     margin-top: -15px;
@@ -373,6 +423,10 @@ section.dental-treatments img {
 }
 .element-of-dental-treatments {
     border: none;
+}
+
+.zoom-on-hover:hover{
+  transform: scale(1.2);
 }
 @media only screen and (max-width: 800px) {
     .heading-dental-treatments {
@@ -764,8 +818,17 @@ margin-top: 30px;
   letter-spacing: 3px;
 }
 
-.image-of-review{
-  width: 10px;
+.div-image-of-review{
+ border: 10px solid red;
+}
+  .image-of-review{
+ border: 10px solid red;
+ width: 10px;
+}
+.image-of-reviews{
+
+  width: 85px !important;
+  margin: 15px auto;
 }
 .div-of-review{
   color: #002345;
@@ -780,6 +843,44 @@ margin-top: 30px;
 .star-of-review{
   font-size: 12px;
 }
+/*  */
+
+
+#owl-demo .item{
+  display: block;
+  padding: 30px 0px;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+.owl-theme .owl-controls .owl-buttons div {
+  padding: 5px 9px;
+}
+ 
+.owl-theme .owl-buttons i{
+  margin-top: 2px;
+}
+ 
+
+ 
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: -45px;
+  top: 55px; 
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: -45px;
+  top: 55px;
+}
+ 
+/*  */
 
 .writer-of-review{
   font-weight: 800;
@@ -958,8 +1059,48 @@ background-color: #f4fbff;
 
 /* footer ----------------------------------------------------------------------- */
 
+.div-footer{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-num-add{
+  margin-top: -10px;
+  display: flex;
+}
 
+.map-icon-footer {
+  font-size: 16px;
+  color: #ff8c00;
+  margin-left: 15px;
+}
 
+.phone-icon-footer {
+  font-size: 16px;
+  color: #0d9c68;
+}
+@media only screen and (max-width: 991px) {
+  .footer-num-add{
+  margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 555px) {
+  .footer-num-add{
+    display: block;
+  }
+.phone-icon-footer {
+  margin-left: 12px;
+}
+.footer-h6{
+  margin-left: 15px;
+
+}
+.footer-add{
+  display: flex
+}
+.p-footer{
+  margin-top: -7px;
+}
+}
 /* end footer----------------------------------------------------------------------- */
 
 

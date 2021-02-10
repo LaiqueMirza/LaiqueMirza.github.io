@@ -1,3 +1,5 @@
+//code for menubar
+
 const doc = document;
 const menuOpen = doc.querySelector(".menu");
 const menuClose = doc.querySelector(".close");
@@ -13,10 +15,33 @@ menuClose.addEventListener("click", () => {
 
 
 
+//code for animation
+
+const faders = document.querySelectorAll('.animated');
+const appearOptions = {
+  threshold: 0.50
+};
+
+const appearOnScroll = new IntersectionObserver(function(enteries, appearOnScroll) {
+  enteries.forEach(entry => {
+    if(!entry.isIntersecting) {
+      return
+    } else {
+      entry.target.classList.add('fadeInUp');
+      appearOnScroll.unobserve(entry.target);
+    }
+  })
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+})
+
+//code for the owl sliders
                         
 window.addEventListener("scroll",function() {
 let header = document.querySelector("header");
-header.classList.toggle("sticky", window.scrollY > 100);
+header.classList.toggle("sticky", window.scrollY > 50);
 })
 
 
@@ -42,21 +67,48 @@ $('.insurance .owl-carousel').owlCarousel({
   }
 })
 
-$('.reviews .owl-carousel').owlCarousel({
+// $('.reviews .owl-carousel').owlCarousel({
+//   loop: true,
+//   autoplay: true,
+//   dots: true,
+//   responsive: {
+//       0: {
+//           items: 1
+//       }
+//   }
+// })
+
+ //Sort random function
+ function random(owlSelector){
+  owlSelector.children().sort(function(){
+      return Math.round(Math.random()) - 0.5;
+  }).each(function(){
+    $(this).appendTo(owlSelector);
+  });
+}
+
+$("#owl-demo").owlCarousel({
+  navigation : false,
+    navigationText : ["prev","next"],
+    rewindNav : true,
+    scrollPerPage : false,
+  navigationText:	["prev","next"],
+  beforeInit : function(elem){
+    //Parameter elem pointing to $("#owl-demo")
+    random(elem);
+  },
   loop: true,
-  autoplay: true,
-  dots: true,
-  responsive: {
-      0: {
-          items: 1
-      }
-  }
+     autoplay: true,
+     dots: true,
+     responsive: {
+         0: {
+             items: 1
+         }
+     }
+});
+
+
 })
-})
-
-
-
-//contact form submission
 
 
 $(document).ready(function(){
