@@ -1,0 +1,291 @@
+
+body {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shippori Mincho B1', serif;
+    color: #1d3557;
+}
+
+
+/* header startsss --------------------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 2px 3px 4px #f1f1f1;
+    
+    margin-top: -10px;
+    height: 80px;
+}
+
+.headings-of-header{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 5%;
+    margin-top: -10px;
+}
+.h3-header {
+    
+    padding: 0 20px;
+    font-size: 22px;
+    margin-top: -10px;
+}
+.main-header{
+    
+    margin-top: -5px;
+    font-size: 30px;
+}
+
+.div-hamburger-header{
+    display: none;
+}
+.search-header {
+    
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.input-header{
+    
+    background-color: #f1f1f1;
+    border: none;
+    padding: 5px;
+    width: 300px;
+    outline: none;
+
+}
+
+.basket-user-header{
+    
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding-right: 5%;
+}
+
+.number-header{
+    padding-left: 5px;
+    
+    color: #e63946;
+}
+.img-header{
+    width: 50px;
+    margin-top: -5px;
+    margin-left: 20px;
+    
+    border-radius: 50%;
+}
+
+.sliding-menu-header{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #1d3557;
+    color: #f1faee;
+    z-index: 4;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+}
+
+.sliding-menu-header-active{
+    width: 100%;
+}
+.link-to-checkout{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+.sliding-menu-header ul {
+    margin-top: 75px;
+}
+.close-sliding{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+}
+.sliding-menu-header li {
+    list-style: none;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1200px){
+    .h3-header{
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .main-header{
+        font-size: 18px;
+    }
+    .input-header{
+        width: 200px;
+    }
+    .basket-user-header{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+ .headings-of-header{
+     display: none;
+ }
+ .div-hamburger-header{
+     display: block;
+     margin-left: 5%;
+     font-size: 20px;
+     cursor: pointer;
+ }
+}
+
+
+
+/* header ends --------------------- */
+
+
+
+
+/* main  --------------------- */
+
+.checkout-heading{
+    font-size: 40px;
+    margin-left: 5%;
+}
+
+.main-content-checkout{
+    display: flex;
+}
+.card-checkout-order{
+   
+    margin: 50px;
+    padding: 30px;
+    border-bottom: 1px solid #f1f1f1;
+    width: 100%;
+    box-shadow: 3px 2px 5px 2px;
+    max-width: 600px;
+    height: 150px;
+}
+.total-amount{
+    margin-top: 0;
+}
+.add-button{
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: #457B9D;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card-checkout{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding: 0 10px;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 3px 2px 5px 2px;
+    max-width: 600px;
+}
+
+.img-div{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.img-main{
+    width: 75px;
+}   
+.price-checkout{
+    margin-top: -10px;
+}
+
+/* .main-section{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+.img-div{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.img-main{
+    width: 75px;
+}   
+.body-part{
+    width: 70%;
+}  
+.brand{
+    color: grey;
+    letter-spacing: 1.5px;
+    font-style: bold;
+    margin-bottom: -10px;
+}
+.description{
+    margin-top: -15px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+.img-previews{
+    display: flex;
+}
+.img-pre{
+    width: 75px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1200px) {
+.description{
+    width: 100%;
+}
+} */
+/* main ends --------------------- */
+
+
+
+
+
+
+
+/* FOOTER START--------------------- */
+
+.footer{
+    width: 100%;
+    background-color: #1d3557;
+    color: #f1faee;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+}
+
+.store-footer{
+    font-weight: 100;
+    margin:0 20px;
+}
+.help-footer{
+    margin:0 20px;
+    font-weight: 100;
+}
+.partners-footer{
+    font-weight: 100;
+    margin:0 20px;
+}
+.address-footer{
+    font-weight: 100;
+    margin:0 20px;
+}
+
+/* FOOTER end--------------------- */
+

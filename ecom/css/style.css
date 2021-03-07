@@ -1,0 +1,341 @@
+
+body {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shippori Mincho B1', serif;
+    color: #1d3557;
+}
+
+
+/* header startsss --------------------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 2px 3px 4px #f1f1f1;
+    
+    margin-top: -10px;
+    height: 80px;
+}
+
+.headings-of-header{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 5%;
+    margin-top: -10px;
+}
+.h3-header {
+    
+    padding: 0 20px;
+    font-size: 22px;
+    margin-top: -10px;
+}
+.main-header{
+    
+    margin-top: -5px;
+    font-size: 30px;
+}
+
+.div-hamburger-header{
+    display: none;
+}
+.search-header {
+    
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.input-header{
+    
+    background-color: #f1f1f1;
+    border: none;
+    padding: 5px;
+    width: 300px;
+    outline: none;
+
+}
+
+.basket-user-header{
+    
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding-right: 5%;
+}
+
+.number-header{
+    padding-left: 5px;
+    
+    color: #e63946;
+}
+.img-header{
+    width: 50px;
+    margin-top: -5px;
+    margin-left: 20px;
+    
+    border-radius: 50%;
+}
+
+.sliding-menu-header{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #1d3557;
+    color: #f1faee;
+    z-index: 4;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+}
+
+.sliding-menu-header-active{
+    width: 100%;
+}
+.link-to-checkout{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+.sliding-menu-header ul {
+    margin-top: 75px;
+}
+.close-sliding{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+}
+.sliding-menu-header li {
+    list-style: none;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1200px){
+    .h3-header{
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .main-header{
+        font-size: 18px;
+    }
+    .input-header{
+        width: 200px;
+    }
+    .basket-user-header{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+ .headings-of-header{
+     display: none;
+ }
+ .div-hamburger-header{
+     display: block;
+     margin-left: 5%;
+     font-size: 20px;
+     cursor: pointer;
+ }
+}
+
+
+
+/* header ends --------------------- */
+
+
+/* main carousel --------------------- */
+
+ .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.img-slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden;
+  }
+  
+  .img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+  }
+  
+  .img-slider .slide.active{
+    opacity: 1;
+    transition: opacity 1s linear;
+  }
+  
+  .img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .img-slider .slide .info{
+    position: absolute;
+    top: 0;
+    padding: 15px 30px;
+  }
+
+  .navigation{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    top: 400px;
+  }
+  
+   .navigation .btn{
+    background: grey;
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .navigation .btn.active{
+    background: #1d3557;
+    box-shadow: 0 0 2px red;
+  }
+
+  @media (max-width: 530px){
+    
+.img-slider{
+  height: 200px;
+}
+.navigation{
+  top: 300px;
+}
+
+  }
+  
+  @media (max-width: 330px){
+    
+    .img-slider{
+      height: 150px;
+    }
+    .navigation{
+      top: 200px;
+    }
+    
+      }
+
+
+/* main carousel end--------------------- */
+
+
+
+
+/* clothing start--------------------- */
+
+.clothing-section {
+    margin:100px 0;
+}
+
+.clothing-section .clothing a{
+
+    text-decoration: none;
+    color: inherit;    
+}
+.clothing-section h3{
+    margin-bottom: 30px;
+}
+  .clothing {
+      display: flex;
+      justify-content: center;
+  }
+  .header-clothing{
+      margin-left: 2%;
+      font-size: 30px;
+  }
+
+  .card-clothing {
+      cursor: pointer;
+      margin: 0 10px;
+      box-shadow: 3px 2px 5px 2px;
+    }
+
+  .img-clothing{
+
+    width: 100%;
+  }
+
+  .h4-clothing{
+      margin-top: 5px;
+      margin-left: 5px;
+  }
+  
+  .brand-clothing{
+      margin-left: 5px;
+      margin-top: -15px;
+    color: grey;letter-spacing: 1.5px;
+    font-style: bold;
+    }
+
+    .price-clothing {
+      margin-left: 5px;
+      color: #1d3557;
+        margin-top: -10px;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+
+/* clothing end--------------------- */
+
+
+
+
+/* FOOTER START--------------------- */
+
+    .footer{
+      
+        background-color: #1d3557;
+        color: #f1faee;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+    }
+
+    .store-footer{
+        font-weight: 100;
+        margin:0 20px;
+    }
+    .help-footer{
+        margin:0 20px;
+        font-weight: 100;
+    }
+    .partners-footer{
+        font-weight: 100;
+        margin:0 20px;
+    }
+    .address-footer{
+        font-weight: 100;
+        margin:0 20px;
+    }
+
+/* FOOTER end--------------------- */
+
