@@ -1,13 +1,14 @@
 
 let products;
 
+const baseUrl = "https://laiquemirza.github.io/ecom/";
 
 
 
 
 
 
-if(window.location.href === "http://127.0.0.1:5500/index.html"){
+if(window.location.href === baseUrl){
 
 const menuOpen = document.querySelector(".div-hamburger-header");
 const menuClose = document.querySelector(".close-sliding");
@@ -112,7 +113,7 @@ function clickCardClothing(e) {
   value = JSON.stringify(value)
   console.log(value)
   localStorage.setItem("value", value)
-    window.location.assign("http://127.0.0.1:5500/html/products.html")
+    window.location.assign(baseUrl+"/products.html")
 
 }
 
@@ -179,7 +180,7 @@ function getDataHomePage() {
 
 getDataHomePage();
 
-} else if(window.location.href === "http://127.0.0.1:5500/html/products.html") {
+} else if(window.location.href === baseUrl+"/products.html") {
 
 
   let countOfImage = 0
