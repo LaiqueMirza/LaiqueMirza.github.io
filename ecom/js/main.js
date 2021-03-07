@@ -1,14 +1,13 @@
 
 let products;
 
-const baseUrl = "https://laiquemirza.github.io/ecom/";
+const baseUrl = "http://"+window.location.host+"/";
+
+console.log(window.location.host)
 
 
 
-
-
-
-if(window.location.href === baseUrl){
+if(window.location.href === baseUrl+"index.html"){
 
 const menuOpen = document.querySelector(".div-hamburger-header");
 const menuClose = document.querySelector(".close-sliding");
@@ -113,7 +112,7 @@ function clickCardClothing(e) {
   value = JSON.stringify(value)
   console.log(value)
   localStorage.setItem("value", value)
-    window.location.assign(baseUrl+"/products.html")
+    window.location.assign(baseUrl+"html/products.html")
 
 }
 
@@ -180,7 +179,7 @@ function getDataHomePage() {
 
 getDataHomePage();
 
-} else if(window.location.href === baseUrl+"/products.html") {
+} else if(window.location.href === baseUrl+"html/products.html") {
 
 
   let countOfImage = 0
@@ -299,7 +298,8 @@ localStorage.setItem("theAddedItems", theAddedItems)
   allImagesOFProductPage.forEach(item => {
       item.addEventListener("click", clickedOnImage)
   })
-} else {
+}
+  else {
   console.log("h");
   
 const elementCountOFCart = document.getElementById("count-of-product");
