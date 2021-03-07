@@ -112,7 +112,7 @@ function clickCardClothing(e) {
   value = JSON.stringify(value)
   console.log(value)
   localStorage.setItem("value", value)
-    window.location.assign(baseUrl+"html/products.html")
+    window.location.assign(baseUrl+"//products.html")
 
 }
 
@@ -179,7 +179,7 @@ function getDataHomePage() {
 
 getDataHomePage();
 
-} else if(window.location.href === baseUrl+"html/products.html") {
+} else if(window.location.href === baseUrl+"//products.html") {
 
 
   let countOfImage = 0
