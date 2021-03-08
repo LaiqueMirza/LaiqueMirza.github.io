@@ -98,6 +98,11 @@ localStorage.setItem("theAddedItems", theAddedItems)
   <button class="add-button" id="add-to-cart">
       ADD TO CART
   </button>
+  <a href="./checkout.html">
+  <button class="add-button">
+      GO TO CART
+  </button>
+  </a>
 </div>
 
   `;
