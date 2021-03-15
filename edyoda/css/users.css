@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 10px 12px -10px grey;
+    width: 100%;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+nav .main-link:hover{
+    color:#1e6106;
+    background-color: #DAFFCC;
+}
+.img-nav{
+    width: 24px;
+    height: 28px;
+    margin-left: 25px;
+}
+.three-nav{
+    margin-left: 10%;
+    display: flex;
+    justify-content: start;
+}
+.orders-button,
+.products-button,
+.users-button{
+    padding: 0 25px;
+    letter-spacing: 1px;
+}
+.logout-button{
+    position: absolute;
+    right: 50px;
+    color: grey;
+    cursor: pointer;
+}
+
+
+/* search part =------------------------------ */
+.div-search{
+    margin: 75px 0;
+}
+
+.input-search {
+    width: 50%;
+    border: none;
+    border-bottom:2px solid grey ;
+    padding: 5px 0;
+    font-size: 16px;
+}
+.input-search:focus{
+    outline: none;
+}
+.iconSearch{
+margin-left: 5px;
+margin-right: 50px;
+cursor: pointer;
+}
+
+.reset-button{
+    font-size: 14px;
+    color: #fff;
+    background-color: #1e6106;
+    padding: 10px 35px;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.reset-button:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body part =-------------------------------------------------- */
+.main-section{
+    width: 90%;
+    margin: 0 auto;
+}
+.users-text{
+    margin-top: 20px;
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+.heading-users{
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.main-card{
+    display: flex;
+    justify-content: space-around;
+    margin: 3px 0;
+    background-color: #DAFFCC;
+    width: 100%;
+}
+
+.heading-of-users-id{
+    width:75px;
+}
+
+.heading-of-users-user-avatar{
+    width: 125px;
+}
+
+.heading-of-users-full-name{
+    width: 125px;
+}
+
+.heading-of-users-dob{
+    width: 125px;
+}
+
+.heading-of-users-gender{
+    width: 125px;
+}
+.heading-of-users-location{
+    width: 175px;
+}
+
+.id-users{
+    width: 75px;
+  font-size: 14px;
+color: grey;
+}
+.image-in-heading{
+    width: 125px;
+}
+
+.full-name-users{
+    width: 125px;
+    font-size: 14px;
+    color: grey;
+}
+.dob-users{
+    width: 125px;
+    font-size: 14px;
+    
+}
+.gender-users{
+    width: 125px;  
+    font-size: 14px;
+    color: grey;
+}
+.location-users{
+    width: 175px;  
+    font-size: 14px;
+    color: grey;
+}

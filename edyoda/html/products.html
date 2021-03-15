@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/products.css" type="text/css" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    
+    
+    
+    <nav>
+        <img class="img-nav" src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+        <h3>Kafene</h3>
+        <div class="three-nav">
+            <a class="main-link" href="./orders.html">
+             <h4 class="orders-button">Orders</h4>
+             </a>
+             <a class="main-link" href="./products.html">
+            <h4 class="products-button">Products</h4>
+            </a>
+            <a class="main-link" href="./users.html">
+            <h4 class="users-button">Users</h4>
+            </a>
+        </div>
+        <h4 class="logout-button" id="logout-button">Logout</h4>
+   </nav>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <main class="main-section">
+    <h2 class="product-text">Products</h2>
+
+    
+    <section class="section-product">
+      <div class="filter">
+          <h3>Filters</h3>
+        <h4>Count: <b id="count-main"></b></h4>
+        <div class="expired-filter">
+          <input id="expired-product" type="checkbox" id="expired" name="expired" value="expired" checked/>
+          <label class="label-product" for="expired">expired</label>
+        </div>
+        <div class="low-stock-filter">
+          <input id="low-stock-product" type="checkbox" id="low-stock" name="low-stock" value="low-stock" checked/>
+          <label class="label-product" for="low-stock">Low Stock</label>
+        </div>
+        
+      </div>
+      <div class="all-the-record">
+        <div class="heading-product">
+            <h3 class="id-heading-product">ID</h3>
+            <h3 class="product-name-heading-product">Product Name</h3>
+            <h3 class="product-brand-heading-product">Product Brand</h3>
+            <h3 class="expiry-date-heading-product">Expiry Date</h3>
+            <h3 class="unit-price-heading-product">Unit Price</h3>
+            <h3 class="stock-heading-product">Stock</h3>
+          </div>
+          <div class="all-the-record-body" id="all-the-record-body">
+    
+      <!-- <div class="main-card">
+
+        <h4 class="id-product">321-123-465</h4>
+        <h4 class="product-name">Sally Whebell</h4>
+        <h4 class="product-brand"> fghgsdfhjd</h4>
+        <h4 class="expiry-date">12 asd, 2011</h4>
+        <h4 class="unit-price">$978</h4>
+        <h4 class="stock">fvfdfdfg</h4>
+      </div>
+      <div class="main-card">
+
+        <h4 class="id-product">321-123-465</h4>
+        <h4 class="product-name">Sally Whebell</h4>
+        <h4 class="product-brand"> fghgsdfhjd</h4>
+        <h4 class="expiry-date">12 asd, 2011</h4>
+        <h4 class="unit-price">$978</h4>
+        <h4 class="stock">fvfdfdfg</h4>
+      </div>
+      <div class="main-card">
+
+        <h4 class="id-product">321-123-465</h4>
+        <h4 class="product-name">Sally Whebell</h4>
+        <h4 class="product-brand"> fghgsdfhjd</h4>
+        <h4 class="expiry-date">12 asd, 2011</h4>
+        <h4 class="unit-price">$978</h4>
+        <h4 class="stock">fvfdfdfg</h4>
+      </div> -->
+    </div>
+    </div>
+    </section>
+</main>
+
+<script src="../js/products.js"></script>
+  </body>
+</html>

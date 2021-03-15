@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/orders.css" type="text/css" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    
+    
+    
+    <nav>
+        <img class="img-nav" src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+        <h3>Kafene</h3>
+        <div class="three-nav">
+            <a class="main-link" href="./orders.html">
+             <h4 class="orders-button">Orders</h4>
+             </a>
+             <a class="main-link" href="./products.html">
+            <h4 class="products-button">Products</h4>
+            </a>
+            <a class="main-link" href="./users.html">
+            <h4 class="users-button">Users</h4>
+            </a>
+        </div>
+        <h4 class="logout-button" id="logout-button">Logout</h4>
+   </nav>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <main class="main-section">
+    <h2 class="order-text">Orders</h2>
+
+    
+    <section class="section-order">
+      <div class="filter">
+          <h3>Filters</h3>
+        <h4>Count: <b id="count-main"></b></h4>
+        <div class="new-filter">
+          <input id="new-order" type="checkbox" id="new" name="new" value="new" checked/>
+          <label class="label-order" for="new">New</label>
+        </div>
+        <div class="packed-filter">
+          <input id="packed-order" type="checkbox" id="packed" name="packed" value="packed" checked/>
+          <label class="label-order" for="packed">Packed</label>
+        </div>
+        <div class="inTransit-filter">
+          <input id="inTransit-order" type="checkbox" id="inTransit" name="inTransit" value="inTransit" checked/>
+          <label class="label-order" for="inTransit">InTransit</label>
+        </div>
+        <div class="delivered-filter">
+          <input id="delivered-order" type="checkbox" id="delivered" name="delivered" value="delivered" checked/>
+          <label class="label-order" for="delivered">Delivered</label>
+        </div>
+      </div>
+      <div class="all-the-record">
+        <div class="heading-order">
+            <h3 class="heading-of-order">ID</h3>
+            <h3 class="heading-of-order-customer">Customer</h3>
+            <h3 class="heading-of-order">Date</h3>
+            <h3 class="heading-of-order">Amount</h3>
+            <h3 class="heading-of-order">Status</h3>
+          </div>
+          <div class="all-the-record-body" id="all-the-record-body">
+      <!-- <div class="main-card">
+
+        <h4 class="id-order">321-123-465</h4>
+        <h4 class="customer-order">Sally Whebell</h4>
+        <div class="date-time-oreder">
+            <h4 class="date-order">07 Aug 2020</h4>
+            <h4 class="time-order">2:29 AM</h4>
+
+        </div>
+        <h4 class="amount-order">$978</h4>
+        <h4 class="status-order">Delivered</h4>
+      </div>
+      <div class="main-card">
+
+        <h4 class="id-order">321-123-465</h4>
+        <h4 class="customer-order">Sally Whebell</h4>
+        <div class="date-time-oreder">
+            <h4 class="date-order">07 Aug 2020</h4>
+            <h4 class="time-order">2:29 AM</h4>
+
+        </div>
+        <h4 class="amount-order">$978</h4>
+        <h4 class="status-order">Delivered</h4>
+      </div>
+      <div class="main-card">
+
+        <h4 class="id-order">321-123-465</h4>
+        <h4 class="customer-order">Sally Whebell</h4>
+        <div class="date-time-oreder">
+            <h4 class="date-order">07 Aug 2020</h4>
+            <h4 class="time-order">2:29 AM</h4>
+
+        </div>
+        <h4 class="amount-order">$978</h4>
+        <h4 class="status-order">Delivered</h4>
+      </div>
+      <div class="main-card">
+
+        <h4 class="id-order">321-123-465</h4>
+        <h4 class="customer-order">Sally Whebell</h4>
+        <div class="date-time-oreder">
+            <h4 class="date-order">07 Aug 2020</h4>
+            <h4 class="time-order">2:29 AM</h4>
+
+        </div>
+        <h4 class="amount-order">$978</h4>
+        <h4 class="status-order">Delivered</h4>
+      </div> -->
+    </div>
+    </div>
+    </section>
+</main>
+
+<script src="../js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 100px auto;
+    border: 1px solid grey;
+    background-color: #fcd5ce;
+    padding: 30px 50px 75px ;
+}
+
+.username, .password{
+    padding: 10px;
+    margin: 15px 0;
+    width: 70%;
+    background-color: #f9dcc4; 
+    border: none;
+
+}
+
+button {
+    padding: 5px;
+    margin: 20px 0;
+    width: 150px;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #e8a598;
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+    background-color: #DAFFCC;
+}
