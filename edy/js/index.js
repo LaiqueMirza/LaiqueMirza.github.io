@@ -19,8 +19,10 @@ function getOrderData() {
     "https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/orders",
     true
   );
+  
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
+        if(xhr.status == 200){
         console.log(JSON.parse(xhr.response));
         let mainResponse = JSON.parse(xhr.response);
         orderBody.innerHTML = "";
@@ -65,8 +67,17 @@ function getOrderData() {
           }
         }
         countMain.innerHTML=`${count}`
+      } else {
+        console.log(`error ${xhr.status} ${xhr.statusText}`);
+        orderBody.innerHTML = orderBody.innerHTML + `
+        <h3> Sorry Something Went wrong Could not fetch the Data </h3>
+          <h3>it is an ${xhr.statusText}</h3>
+          <h3> the status code is ${xhr.status}</h3>
+        `;
+      }
       }
     };
+  
   xhr.send();
 }
 getOrderData();

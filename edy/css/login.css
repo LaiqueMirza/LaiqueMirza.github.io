@@ -21,7 +21,9 @@ section {
     border: none;
 
 }
-
+.username:focus, .password:focus{
+    outline: none;
+}
 button {
     padding: 5px;
     margin: 20px 0;
@@ -34,4 +36,7 @@ button {
 }
 button:hover{
     background-color: #DAFFCC;
+}
+button:focus{
+    outline: none;
 }

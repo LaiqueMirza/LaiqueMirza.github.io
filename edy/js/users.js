@@ -6,24 +6,28 @@ const logoutButton = document.getElementById("logout-button");
 
 
 function searching() {
+  let searchValue = inputSearch.value.toLowerCase();
+  console.log(searchValue.length)
+  if(searchValue.length < 2){
+    alert("Your search should have more than one letter")
+    return;
+  }
     const xhr = new XMLHttpRequest();
     xhr.open(
       "GET",
-      "https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users",
+      "https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users?fullName=" + searchValue,
       true
     );
       xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
+            if(xhr.status == 200){
+
           console.log(JSON.parse(xhr.response));
           let mainResponse = JSON.parse(xhr.response);
           orderBody.innerHTML = "";
-          let searchValue = inputSearch.value.toLowerCase();
 
           for (let i = 0; i < mainResponse.length; i++) {
-              let userName = mainResponse[i].fullName.toLowerCase();
-              if(searchValue == userName){
-              console.log(searchValue, userName)
-
+              
               orderBody.innerHTML =
                 orderBody.innerHTML +
                 `
@@ -40,8 +44,15 @@ function searching() {
               </div>
   
               `;
-              }
           }
+        } else {
+          console.log(`error ${xhr.status} ${xhr.statusText}`);
+          orderBody.innerHTML = `
+          <h3> Sorry Something Went wrong Could not fetch the Data </h3>
+            <h3>it is an ${xhr.statusText}</h3>
+            <h3> the status code is ${xhr.status}</h3>
+          `;
+        }
         }
       };
     xhr.send();
@@ -58,6 +69,7 @@ inputSearch.addEventListener("keyup", enterKeyPress);
 searchIcon.addEventListener("click", searching);
 
 resetButton.onclick =  function () {
+  inputSearch.value = "";
     getOrderData();
 }
 
@@ -75,6 +87,8 @@ function getOrderData() {
   );
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
+        if(xhr.status == 200){
+
         console.log(JSON.parse(xhr.response));
         let mainResponse = JSON.parse(xhr.response);
         orderBody.innerHTML = "";
@@ -98,6 +112,14 @@ function getOrderData() {
             `;
           
         }
+      } else {
+        console.log(`error ${xhr.status} ${xhr.statusText}`);
+        orderBody.innerHTML = orderBody.innerHTML + `
+        <h3> Sorry Something Went wrong Could not fetch the Data </h3>
+          <h3>it is an ${xhr.statusText}</h3>
+          <h3> the status code is ${xhr.status}</h3>
+        `;
+      }
       }
     };
   xhr.send();
