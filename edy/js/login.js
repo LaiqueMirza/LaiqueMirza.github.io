@@ -1,8 +1,11 @@
 let login = localStorage.getItem("login")
-console.log(typeof(login))
-if(login === "false"){
 
-    console.log(login,2)
+if(login === "true"){
+
+    location.replace('./html/orders.html')
+
+    
+} else {
 
     const username = document.getElementById("username");
     const password = document.getElementById("password");
@@ -48,9 +51,4 @@ if(login === "false"){
     }
     
     signinButton.addEventListener("click", onClickSignIn)
-    
-} else {
-    console.log(login,1)
-
-    location.replace('./html/orders.html')
  }
