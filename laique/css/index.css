@@ -1,0 +1,104 @@
+.coronaMainDiv {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+}
+.coronaSecondDiv{
+    display: flex;
+    justify-content: center;    
+    flex-wrap:wrap;
+}
+.formCorona{
+    margin: 30px;
+}
+.coronaSmallContainer1{
+
+    border: 2px solid #e85a4f;
+   color: #b22222;
+   width: 210px;
+   background-color: #f0e9e9;
+   margin: 30px;
+   box-shadow: 2px 3px 8px 2px grey;
+}
+
+
+.coronaSmallContainer2{
+    border: 2px solid #e85a4f;
+   color: #b22222;
+   width: 210px;
+   background-color: #f0e9e9;
+   margin: 30px;
+   box-shadow: 2px 3px 8px 2px grey;
+}
+
+
+.coronaSmallContainer3{
+    border: 2px solid rgb(129, 221, 86);
+   width: 210px;
+   background-color: 	rgb(220, 250, 220);
+   color: rgb(76, 187, 23);
+   margin: 30px;
+   box-shadow: 2px 3px 8px 2px grey;
+}
+
+.dropdownButtonSelect{
+    padding: 10px;
+    font-size: 18px;
+    background-color: #eae7dc;
+    color: #e85a4f;
+    border-radius: 10px;
+    max-width: 150px;
+    margin-right: 30px;
+    box-shadow: 2px 3px 8px 2px grey;
+}
+
+.dropdownButtonSelect:focus{
+    outline: none;
+}
+.dropdownButtonLabel{
+    padding-right: 10px;
+    font-style: 18px;
+    color: #e85a4f;
+}
+
+.mainHeadingOfCoronaTracker{
+
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    color: #E6BEBE;
+    font-size: 42px;
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    
+  
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+    
+}
+
+
+.mainHeadingOfCorona{
+    text-align: center;
+
+}
+
+.preCorona{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.h4TagCorona{
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
