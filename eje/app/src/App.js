@@ -25,7 +25,7 @@ function App() {
           <Route path="/shop" component={Shop} />
           <Route path="/contact" component={Contact} />
           <Route path="/cart" component={Cart} />
-          <Route component={() => <h1>You are lost</h1>} />
+          <Route component={() => <h1>You are lost baby girl</h1>} />
         </Switch>
       </div>
     </BrowserRouter>
