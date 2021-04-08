@@ -70,7 +70,7 @@ closing.forEach(item =>{
   });
 })
 
-
+console.log("hi there if you are a developer than we can colobrate contact me")
 
 $(document).ready(function () {
 
