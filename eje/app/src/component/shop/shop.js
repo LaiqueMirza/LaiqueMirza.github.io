@@ -1,28 +1,41 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./shop.css";
-import Product from "../product/product";
+import Products from "../product/products/products";
 
 const Shop = () => {
-  // const [products, setProducts] = useState([]);
-  // const [loading, setLoading] = useState(true);
-  // useEffect(() => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
    
-  //   axios
-  //     .get("/api/products")
-  //     .then((res) => setProducts(res.data))
-  //     .catch((err) => console.log(err));
-  //       setLoading(false);
-     
-  // }, []);
-  // console.log(products);
+    axios
+      .get("/api/products")
+      .then((res) => setProducts(res.data))
+      .catch((err) => console.log(err));
+        setLoading(false);
+       
+  }, []);
+  console.log(products);
   return (
     <div className="shopDiv">
-      Shop
-      {/* {loading && <h1>Loading...</h1>}
-      {products.map((product) => (
-        <Product name={product.name} />
-      ))} */}
+      {loading && <h1>Loading...</h1>}
+      
+<section className="clothing-section">
+
+<h3 className="header-clothing">Clothing for Men and Women</h3>
+
+<div className="clothing" id="clothing">
+{products.map((product) => (
+        <Products
+         data={product} 
+        key={product.id}
+        />
+      ))}
+</div>
+    
+
+</section>
+      
     </div>
   );
 };

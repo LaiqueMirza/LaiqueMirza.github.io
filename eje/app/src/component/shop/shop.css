@@ -1,0 +1,27 @@
+
+
+/* products css */
+
+.clothing-section {
+    margin-bottom:100px;
+}
+
+
+  .clothing {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  .header-clothing{
+      margin-left: 2%;
+      font-size: 30px;
+  }
+
+  
+@media only screen and (max-width: 900px) {
+    .clothing {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 50% 50%;
+    }
+}

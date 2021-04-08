@@ -64,13 +64,13 @@ localStorage.setItem("theAddedItems", theAddedItems)
     const numberOfImage = e.target.id;
   countOfImage = numberOfImage;
     mainImg.innerHTML = `
-    <img class="img-main" src="${targetProduct.photos[countOfImage]}" alt="" class="img"> 
+    <img class="img-main" src="${targetProduct.photos[countOfImage]}" alt=""> 
     `
   }
 
   mainSection.innerHTML=`
   <div class="img-div" id="img-div">
-  <img class="img-main" src="${targetProduct.photos[countOfImage]}" alt="" class="img">
+  <img class="img-main" src="${targetProduct.photos[countOfImage]}" alt="" >
 </div>
 <div class="body-part">
   <h2 class="mainheading">

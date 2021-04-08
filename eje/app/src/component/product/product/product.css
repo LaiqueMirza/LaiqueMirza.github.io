@@ -1,0 +1,53 @@
+
+.main-section{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+.img-div{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.img-main{
+    width: 100%;
+    max-width: 400px;
+}   
+.body-part{
+    width: 70%;
+}  
+.brand{
+    color: grey;
+    letter-spacing: 1.5px;
+    font-style: bold;
+    margin-bottom: -10px;
+}
+.description{
+    margin-top: -15px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+.img-previews{
+    display: flex;
+}
+.img-pre{
+    width: 75px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.add-button{
+    margin-top: 20px;
+    padding:10px 15px;
+    background-color: indianred;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 10px;
+}
+@media only screen and (max-width:1200px) {
+.description{
+    width: 100%;
+}
+}

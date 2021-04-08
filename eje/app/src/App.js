@@ -5,6 +5,7 @@ import About from "./component/about/about";
 import Contact from "./component/contact/contact";
 import Shop from "./component/shop/shop";
 import Cart from "./component/cart/cart";
+import Product from "./component/product/product/product";
 import "./App.css";
 import {
   BrowserRouter,
@@ -25,6 +26,7 @@ function App() {
           <Route path="/shop" component={Shop} />
           <Route path="/contact" component={Contact} />
           <Route path="/cart" component={Cart} />
+          <Route path="/product" component={Product} />
           <Route component={() => <h1>You are lost baby girl</h1>} />
         </Switch>
       </div>
