@@ -1,11 +1,50 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navBar.css";
 import logoNav from "../../img/logoNav.svg";
 import cartLogo from "../../img/cartLogo.svg";
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { incrementCart, loginUser } from "../redux/action";
+import SearchBar from "../searchBar/searchBar";
+import { useHistory } from "react-router-dom";
 
 const NavBar = () => {
+  const history = useHistory();
+  let counter = useSelector((state) => state.cartCount);
+  // setLoginState] = useState(false);
+  // setLoginState(
+  const loginState =useSelector(state => state.loginUser);
+  console.log(loginState)
+  const [loginCheck, setLoginCheck] = useState(false);
   const [clickCheck, setClickCheck] = useState(false);
+
+  console.log(loginCheck, ">>>>>>>>>>>>>>>>>>>>>");
+  const dispatch = useDispatch();
+  console.log(counter);
+
+  useEffect(() =>{
+    if(loginState){
+      setLoginCheck(true)
+    }
+      },[loginState])
+
+  useEffect(() => {
+    setLoginCheck(JSON.parse(sessionStorage.getItem("login")));
+    if (!localStorage.getItem("countOfCart")) {
+      let countOfCart = 0;
+      countOfCart = JSON.stringify(countOfCart);
+      localStorage.setItem("countOfCart", countOfCart);
+    } else {
+      let countOfCart = JSON.parse(localStorage.getItem("countOfCart"));
+      dispatch(incrementCart(countOfCart));
+    }
+  }, []);
+  if(loginCheck){
+  let userData = JSON.parse(sessionStorage.getItem("userInfo"))  
+  const countOfCart = userData.userCart.countOfCart;
+    dispatch(incrementCart(countOfCart));
+
+  }
 
   const hamburgerClicked = () => {
     let element = document.querySelector("#navBarHamburgerDisplay");
@@ -16,13 +55,20 @@ const NavBar = () => {
       : element.classList.remove("navBarActive");
     // classList.add("navBarActive")
   };
-
+const loginCartAlert =()=>{
+  
+  alert("SignUp or LogIn First");
+  history.push("/signUp")
+}
   return (
     <div className="navBar">
       <nav className="navBarNav">
         <div className="navBarDiv">
-          <div className="navBarImgDiv">
+          <div className="navBarImgDiv navBarItems">
             <img className="navBarImg" src={logoNav} alt="nav-logo" />
+          </div>
+          <div className="searchBarDiv">
+            <SearchBar />
           </div>
           <div className="navBarTextDiv">
             <span className="navBarItems ">
@@ -35,10 +81,10 @@ const NavBar = () => {
             </span>
             <span className="navBarItems ">
               <Link
-                to="/about"
+                to="/blog"
                 style={{ textDecoration: "none", color: "whitesmoke" }}
               >
-                About
+                Blog
               </Link>
             </span>
             <span className="navBarItems ">
@@ -50,15 +96,49 @@ const NavBar = () => {
               </Link>
             </span>
             <span className="navBarItems ">
+              {loginCheck ? (
+                <span
+                  className=""
+                  onClick={() => {
+                    // dispatch(loginUser())
+                    // dispatch(incrementCart(0))
+                    sessionStorage.removeItem("login");
+                    sessionStorage.removeItem("userInfo");
+                    // setLoginCheck(false);
+                    history.push("/shop");
+                    window.location.reload();
+                  }}
+                >
+                    LogOut
+                </span>
+              ) : (
+                <span
+                  className=""
+                  onClick={() => {
+                    // setLoginCheck(true);
+                    //  history.push("/shop")
+                  }}
+                >
+                  <Link
+                    to="/logIn"
+                    style={{ textDecoration: "none", color: "whitesmoke" }}
+                  >
+                    LogIn
+                  </Link>
+                </span>
+              )}
+            </span>
+            {/* <span className="navBarItems ">
               <Link
                 to="/contact"
                 style={{ textDecoration: "none", color: "whitesmoke" }}
               >
                 Contact
               </Link>
-            </span>
-
-            <Link
+            </span> */}
+            {
+              loginCheck ? 
+              <Link
               to="/cart"
               style={{ textDecoration: "none", color: "whitesmoke" }}
             >
@@ -66,8 +146,19 @@ const NavBar = () => {
                 <img className="navBarCart" src={cartLogo} alt="nav-logo" />
               </div>
             </Link>
+              :
+              
+              <div className="navBarCartImageDiv"
+              onClick={loginCartAlert}
+              >
+                <img className="navBarCart" src={cartLogo} alt="nav-logo" />
+              </div>
+  
+            }
+            
+
             <div className="navBarCountsDiv">
-              <span className="navBarCounts">0</span>
+              <span className="navBarCounts">{counter}</span>
             </div>
 
             <div
@@ -94,10 +185,10 @@ const NavBar = () => {
         </h4>
         <h4 onClick={() => hamburgerClicked()} className="navBarHamburgerItems">
           <Link
-            to="/about"
+            to="/blog"
             style={{ textDecoration: "none", color: "whitesmoke" }}
           >
-            About
+            Blog
           </Link>
         </h4>
         <h4 onClick={() => hamburgerClicked()} className="navBarHamburgerItems">
@@ -109,13 +200,52 @@ const NavBar = () => {
           </Link>
         </h4>
         <h4 onClick={() => hamburgerClicked()} className="navBarHamburgerItems">
+        {loginCheck ? (
+                <span
+                  className=""
+                  onClick={() => {
+                    // dispatch(loginUser())
+                    // dispatch(incrementCart(0))
+                    sessionStorage.removeItem("login");
+                    sessionStorage.removeItem("userInfo");
+                    // setLoginCheck(false);
+                    history.push("/shop");
+                    window.location.reload();
+                  }}
+                >
+                    LogOut
+                </span>
+              ) : (
+                <span
+                  className=""
+                  onClick={() => {
+                    // setLoginCheck(true);
+                    //  history.push("/shop")
+                  }}
+                >
+                  <Link
+                    to="/logIn"
+                    style={{ textDecoration: "none", color: "whitesmoke" }}
+                  >
+                    LogIn
+                  </Link>
+                </span>
+              )}
+        </h4>
+        {/* <h4 onClick={() => hamburgerClicked()} className="navBarHamburgerItems">
           <Link
             to="/contact"
             style={{ textDecoration: "none", color: "whitesmoke" }}
           >
             Contact
           </Link>
-        </h4>
+        </h4> */}
+        <div
+          onClick={() => hamburgerClicked()}
+          className="navBarHamburgerItems navBarImgDiv"
+        >
+          <img className="navBarImg" src={logoNav} alt="nav-logo" />
+        </div>
       </div>
     </div>
   );

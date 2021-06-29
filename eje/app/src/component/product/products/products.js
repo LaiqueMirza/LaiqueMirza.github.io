@@ -24,32 +24,23 @@ import './products.css';
 // length: 5
 
 const Products = ({data}) => {
-
-
-    return ( 
-    
-    <div>
+    return (     
+    <div key={data._id}>
 
         <Link
             to="/product"
             style={{ textDecoration: "none", color: "inherit" }}
             onClick={() => {
                 sessionStorage.setItem("product", JSON.stringify(data))
-                console.log(data)
             }}
           >
         <div className="card-clothing" >
         <img className="img-clothing" src={data.photos[0]} alt="" width="150px" />
         
-        <h4 className="h4-clothing">{data.name}</h4>
+        <h4 className="h4-clothing">{data.productName}</h4>
         <h5 className="brand-clothing">{data.brand}</h5>
         <h5 className="price-clothing">Rs {data.price}</h5>
-        <h5 className="price-clothing">Rs {data.price}</h5>
-        <h5 className="price-clothing">Rs {data.price}</h5>
-        <h5 className="brand-clothing">{data.brand}</h5>
-        <h5 className="price-clothing">Rs {data.price}</h5>
-        <h5 className="price-clothing">Rs {data.price}</h5>
-        <h5 className="price-clothing">Rs {data.price}</h5>
+        
         </div>
       </Link>
     </div> );

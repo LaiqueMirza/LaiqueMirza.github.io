@@ -1,0 +1,11 @@
+in server .js login
+// let usersData;
+
+		// const auth = result.every(detail =>{
+		// if(	detail.userInfo.email === email &&
+		// 	 detail.userInfo.password === password){
+		// 		 usersData = JSON.stringify(detail); 
+		// 		 return false;
+		// 	 } 
+		// 	 return true;
+		// });

@@ -27,7 +27,7 @@ if(login === "true"){
                 true
             )
             xhr.onreadystatechange = function () {
-                if(xhr. readyState == 4) {
+                if(xhr.readyState == 4) {
                     const response = JSON.parse(xhr.response);
                     for (let i = 0; i < response.length ; i++) {
     

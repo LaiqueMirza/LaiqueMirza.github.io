@@ -15,13 +15,15 @@
       ],
       description: "Navy solid sweatshirt with patchwork, has a round neck, long sleeves, straight hem",
       size: [
-        1,
-        1,
-        0,
-        1,
-        0
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "United Colors of Benetton",
       price: 2599
     },
@@ -36,13 +38,15 @@
       ],
       description: "Black solid sporty jacket, has a mock collar, 3 pockets, zip closure, long sleeves, straight hem, unlined lining",
       size: [
-        0,
-        0,
-        0,
-        1,
-        0
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "Puma",
       price: 7999
     },
@@ -60,13 +64,15 @@
       ],
       description: "Flaunt an effortless look with this ultimate pair of black coloured formal shoes from the house of Hush Puppies. Let the sun go down for uncomfortable shoes, as you opt for this pair of formal shoes that is crafted using comfortable TPR (thermoplastic rubber) sole. Pair these formal shoes with a shirt and trousers to look absolutely handsome",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "Hush Puppies",
       price: 6999
     },
@@ -83,13 +89,15 @@
       ],
       description: "Black solid leather jacket, has a spread collar, 3 pockets, zip closure, long sleeves, straight hem, polyester lining",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "BARESKIN",
       price: 9999
     },
@@ -106,13 +114,15 @@
       ],
       description: "Blue solid woven shirt dress, has a shirt collar, sleeveless, button closure, flared hem",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "SASSAFRAS",
       price: 5200
     },
@@ -129,13 +139,15 @@
       ],
       description: "Navy solid sweatshirt with patchwork, has a round neck, long sleeves, straight hem",
       size: [
-        1,
-        1,
-        0,
-        1,
-        0
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "United Colors of Benetton",
       price: 2599
     },
@@ -150,13 +162,15 @@
       ],
       description: "Black solid sporty jacket, has a mock collar, 3 pockets, zip closure, long sleeves, straight hem, unlined lining",
       size: [
-        0,
-        0,
-        0,
-        1,
-        0
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "Puma",
       price: 7999
     },
@@ -174,13 +188,15 @@
       ],
       description: "Flaunt an effortless look with this ultimate pair of black coloured formal shoes from the house of Hush Puppies. Let the sun go down for uncomfortable shoes, as you opt for this pair of formal shoes that is crafted using comfortable TPR (thermoplastic rubber) sole. Pair these formal shoes with a shirt and trousers to look absolutely handsome",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "Hush Puppies",
       price: 6999
     },
@@ -197,13 +213,15 @@
       ],
       description: "Black solid leather jacket, has a spread collar, 3 pockets, zip closure, long sleeves, straight hem, polyester lining",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "BARESKIN",
       price: 9999
     },
@@ -220,13 +238,15 @@
       ],
       description: "Blue solid woven shirt dress, has a shirt collar, sleeveless, button closure, flared hem",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "SASSAFRAS",
       price: 5200
     },
@@ -243,13 +263,15 @@
       ],
       description: "Navy solid sweatshirt with patchwork, has a round neck, long sleeves, straight hem",
       size: [
-        1,
-        1,
-        0,
-        1,
-        0
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "United Colors of Benetton",
       price: 2599
     },
@@ -264,13 +286,15 @@
       ],
       description: "Black solid sporty jacket, has a mock collar, 3 pockets, zip closure, long sleeves, straight hem, unlined lining",
       size: [
-        0,
-        0,
-        0,
-        1,
-        0
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "Puma",
       price: 7999
     },
@@ -288,13 +312,15 @@
       ],
       description: "Flaunt an effortless look with this ultimate pair of black coloured formal shoes from the house of Hush Puppies. Let the sun go down for uncomfortable shoes, as you opt for this pair of formal shoes that is crafted using comfortable TPR (thermoplastic rubber) sole. Pair these formal shoes with a shirt and trousers to look absolutely handsome",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "Hush Puppies",
       price: 6999
     },
@@ -311,13 +337,15 @@
       ],
       description: "Black solid leather jacket, has a spread collar, 3 pockets, zip closure, long sleeves, straight hem, polyester lining",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "BARESKIN",
       price: 9999
     },
@@ -334,13 +362,15 @@
       ],
       description: "Blue solid woven shirt dress, has a shirt collar, sleeveless, button closure, flared hem",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "SASSAFRAS",
       price: 5200
     },   
@@ -357,13 +387,15 @@
       ],
       description: "Navy solid sweatshirt with patchwork, has a round neck, long sleeves, straight hem",
       size: [
-        1,
-        1,
-        0,
-        1,
-        0
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "United Colors of Benetton",
       price: 2599
     },
@@ -378,13 +410,15 @@
       ],
       description: "Black solid sporty jacket, has a mock collar, 3 pockets, zip closure, long sleeves, straight hem, unlined lining",
       size: [
-        0,
-        0,
-        0,
-        1,
-        0
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "Puma",
       price: 7999
     },
@@ -402,13 +436,15 @@
       ],
       description: "Flaunt an effortless look with this ultimate pair of black coloured formal shoes from the house of Hush Puppies. Let the sun go down for uncomfortable shoes, as you opt for this pair of formal shoes that is crafted using comfortable TPR (thermoplastic rubber) sole. Pair these formal shoes with a shirt and trousers to look absolutely handsome",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "Hush Puppies",
       price: 6999
     },
@@ -425,13 +461,15 @@
       ],
       description: "Black solid leather jacket, has a spread collar, 3 pockets, zip closure, long sleeves, straight hem, polyester lining",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "BARESKIN",
       price: 9999
     },
@@ -448,13 +486,15 @@
       ],
       description: "Blue solid woven shirt dress, has a shirt collar, sleeveless, button closure, flared hem",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "SASSAFRAS",
       price: 5200
     },
@@ -471,13 +511,15 @@
       ],
       description: "Navy solid sweatshirt with patchwork, has a round neck, long sleeves, straight hem",
       size: [
-        1,
-        1,
-        0,
-        1,
-        0
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "United Colors of Benetton",
       price: 2599
     },
@@ -492,13 +534,15 @@
       ],
       description: "Black solid sporty jacket, has a mock collar, 3 pockets, zip closure, long sleeves, straight hem, unlined lining",
       size: [
-        0,
-        0,
-        0,
-        1,
-        0
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "Puma",
       price: 7999
     },
@@ -516,13 +560,15 @@
       ],
       description: "Flaunt an effortless look with this ultimate pair of black coloured formal shoes from the house of Hush Puppies. Let the sun go down for uncomfortable shoes, as you opt for this pair of formal shoes that is crafted using comfortable TPR (thermoplastic rubber) sole. Pair these formal shoes with a shirt and trousers to look absolutely handsome",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "Hush Puppies",
       price: 6999
     },
@@ -539,13 +585,15 @@
       ],
       description: "Black solid leather jacket, has a spread collar, 3 pockets, zip closure, long sleeves, straight hem, polyester lining",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "BARESKIN",
       price: 9999
     },
@@ -562,13 +610,15 @@
       ],
       description: "Blue solid woven shirt dress, has a shirt collar, sleeveless, button closure, flared hem",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "SASSAFRAS",
       price: 5200
     },
@@ -585,13 +635,15 @@
       ],
       description: "Navy solid sweatshirt with patchwork, has a round neck, long sleeves, straight hem",
       size: [
-        1,
-        1,
-        0,
-        1,
-        0
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "United Colors of Benetton",
       price: 2599
     },
@@ -606,13 +658,15 @@
       ],
       description: "Black solid sporty jacket, has a mock collar, 3 pockets, zip closure, long sleeves, straight hem, unlined lining",
       size: [
-        0,
-        0,
-        0,
-        1,
-        0
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "Puma",
       price: 7999
     },
@@ -630,13 +684,15 @@
       ],
       description: "Flaunt an effortless look with this ultimate pair of black coloured formal shoes from the house of Hush Puppies. Let the sun go down for uncomfortable shoes, as you opt for this pair of formal shoes that is crafted using comfortable TPR (thermoplastic rubber) sole. Pair these formal shoes with a shirt and trousers to look absolutely handsome",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "Hush Puppies",
       price: 6999
     },
@@ -653,13 +709,15 @@
       ],
       description: "Black solid leather jacket, has a spread collar, 3 pockets, zip closure, long sleeves, straight hem, polyester lining",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "BARESKIN",
       price: 9999
     },
@@ -676,13 +734,15 @@
       ],
       description: "Blue solid woven shirt dress, has a shirt collar, sleeveless, button closure, flared hem",
       size: [
-        1,
-        1,
-        1,
-        1,
-        1
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
       ],
       isAccessory: false,
+      selectedSize: "",
+      quantity: 1,
       brand: "SASSAFRAS",
       price: 5200
     },

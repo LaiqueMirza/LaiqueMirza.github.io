@@ -11,6 +11,7 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      overflow: hidden;
   }
   .header-clothing{
       margin-left: 2%;

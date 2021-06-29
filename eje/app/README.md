@@ -17,7 +17,7 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section blog [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -27,7 +27,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See the section blog [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
@@ -68,3 +68,53 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+{
+// "homepage": "https://LaiqueMirza.github.io/Reactecom",
+"name": "app",
+// "proxy": "http://127.0.0.1:5000",
+"version": "0.1.0",
+"private": true,
+"dependencies": {
+"@testing-library/jest-dom": "^5.11.10",
+"@testing-library/react": "^11.2.6",
+"@testing-library/user-event": "^12.8.3",
+"axios": "^0.21.1",
+"react": "^17.0.2",
+"react-dom": "^17.0.2",
+"react-redux": "^7.2.3",
+"react-router-dom": "^5.2.0",
+"react-scripts": "4.0.3",
+"redux": "^4.0.5",
+"web-vitals": "^1.1.1"
+},
+"scripts": {
+// "predeploy": "npm run build",
+// "deploy": "gh-pages -d build",
+"start": "react-scripts start",
+"build": "react-scripts build",
+"test": "react-scripts test",
+"eject": "react-scripts eject"
+},
+"eslintConfig": {
+"extends": [
+"react-app",
+"react-app/jest"
+]
+},
+"browserslist": {
+"production": [
+">0.2%",
+"not dead",
+"not op_mini all"
+],
+"development": [
+"last 1 chrome version",
+"last 1 firefox version",
+"last 1 safari version"
+]
+},
+"devDependencies": {
+"gh-pages": "^3.1.0"
+}
+}
